@@ -1,0 +1,16 @@
+span.decision {
+    font-weight: bold;
+    border-width: thin;
+    border-style: solid;
+    border-color: #000000;
+    padding: 5px;
+    background-color: #dddddd;
+}
+span.decisionhover {
+    font-weight: bold;
+    border-width: thin;
+    border-style: solid;
+    border-color: #000000;
+    padding: 5px;
+    background-color: #eeeeee;
+}

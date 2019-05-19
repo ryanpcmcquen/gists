@@ -1,0 +1,47 @@
+/**
+ * awesome font dabbling
+ */
+
+i.fa-circle-o {
+  color: hsl(0, 0%, 30%);
+  border-radius: 100%;
+  font-size: 3rem;
+  margin-left: 0.55rem;
+  margin-top: 0.26rem;
+  box-shadow: 0.1rem 0.2rem 0.4rem hsla(0, 0%, 10%, 0.9);
+}
+
+i.fa-check {
+/*
+  box-shadow: 0 0 0.5rem hsla(0, 0%, 0%, 1);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border-style: solid;
+  border-color: hsla(0, 0%, 30%, 1);
+  border-width: 0.2rem;
+*/
+  margin-top: -1.25rem;
+  margin-left: 0.25rem;
+  font-size: 4rem;
+}
+
+
+
+
+.system-checkmark {
+  font-size: 2rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: hsl(0, 0%, 50%);
+  box-shadow: 0 0 0.5rem hsl(0, 0%, 20%);
+}
+  
+  
+.system-checkmark:after {
+  font-size: 3rem;
+  position: relative;
+  content: "√";
+  top: 0.25rem;
+
+}

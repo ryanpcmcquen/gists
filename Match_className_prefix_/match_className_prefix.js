@@ -1,0 +1,1 @@
+className.match(/(^|\s)bg-\S+/g)

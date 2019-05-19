@@ -1,0 +1,13 @@
+
+.gform_button {
+  border-color: #b3893b !important;
+  background: #b3893b !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+}
+
+.gform_button:hover {
+  border-color: #b3893b !important;
+  background: #c8a159 !important;
+  color: #ffffff !important;
+}

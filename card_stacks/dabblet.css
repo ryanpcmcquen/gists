@@ -1,0 +1,38 @@
+/* card stacks */
+/* don't copy this part */
+body{padding: 50px;background: #4f4d4e}
+hr{margin: 90px 0; border: none}
+h2{color: #fff;font-size: 30px; margin-bottom: 40px;}
+.photo-dual-stack {border: 1px dashed hsl(30, 50%, 50%)}
+
+
+
+/* start copying here */
+.transform(@string) {
+  -webkit-transform: @string;
+  -moz-transform: @string;
+  -ms-transform: @string;
+  -o-transform: @string;
+}
+
+.photo-dual-stack {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  img {
+    box-shadow: 0 0 10px rgba(0,0,0,.8);
+    border: 5px solid #fff;    
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    .transform(rotate(-10.5deg));
+    top: 20px;
+  }
+  img + img {
+    .transform(rotate(2deg));
+    z-index: 2;
+    margin-left: -20px;
+    top: 0;
+  }
+}

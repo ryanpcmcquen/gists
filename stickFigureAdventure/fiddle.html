@@ -1,0 +1,12 @@
+<title>Stick Figure Adventure</title>
+<body>
+    <div style="margin-top: 100px; text-align: center;">
+        <img id="sceneimg" src="https://github.com/ryanpcmcquen/headFirstJavascriptCode/raw/master/JS%20examples/chapter08/sfa/scene0.png" alt="Stick Figure Adventure">
+        <br>
+        <div id="scenetext"></div>
+        <br><span id="decision1" class="decision" onclick="changeScene(1)" onmouseover="this.className = 'decisionhover'" onmouseout="this.className = 'decision'">Start game</span>
+ <span id="decision2" class="decision" onclick="changeScene(2)" onmouseover="this.className = 'decisionhover'" onmouseout="this.className = 'decision'" style="visibility: hidden;"></span>
+
+        <div id="history" style="background-color: #eeeeee;"></div>
+    </div>
+</body>

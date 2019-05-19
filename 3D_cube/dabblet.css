@@ -1,0 +1,50 @@
+/**
+ * 3D cube
+ */
+ 
+body {
+	perspective: 600px;
+	perspective-origin: 300px -90px;
+}
+
+.cube, .cube:before, .cube:after,
+.cube > div, .cube > div::before, .cube > div::after {
+	content: "";
+	position: absolute;
+	width: 200px; height: 200px;
+	transform-origin: 0 0;
+	transform-style: preserve-3d;
+}
+
+.cube {
+	top: 100px; left: 100px;
+	background: hsla(0,100%,50%,.5);
+	transform-origin: center;
+	transform: rotateY(230deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.cube > div {
+	transform-origin: 50% 100%;
+	transform: rotateX(90deg) rotateY(180deg);
+	background: hsla(180,100%,50%,.5);
+}
+
+.cube::before,
+.cube > div::before {
+	background: hsla(60,100%,50%,.5);
+	transform: rotateX(-90deg);
+}
+
+.cube::after,
+.cube > div::after {
+	background: hsla(120,100%,50%,.5);
+	transform: rotateY(-90deg) translateX(-100%);
+}
+
+.cube > div::before {
+	background: hsla(240,100%,50%,.5);
+}
+
+.cube > div::after {
+	background: hsla(300,100%,50%,.5);
+}

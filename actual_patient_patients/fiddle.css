@@ -1,0 +1,90 @@
+/** actual patient(s) v1.1.0 **/
+
+/** with {image & media}-box support **/
+
+/** by Ryan P.C. McQuen **/
+
+/** these recreate the web environment **/
+
+/** DO NOT COPY **/
+ section {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    position: relative;
+    padding: 10px 0 0 0;
+}
+section div {
+    text-align: center;
+}
+section img {
+    width: 100%;
+}
+/*********************************************/
+
+/** this is where the reusable stuff starts **/
+
+/*********************************************/
+
+/*******************************/
+
+/* start of actual patient css */
+
+/*******************************/
+
+/* the main magic */
+ .actual-patient-b div.the-media:after, .actual-patient-b-center div.the-media:after, .actual-patient-w div.the-media:after, .actual-patient-w-center div.the-media:after, .actual-patient-b-right div.the-media:after, .actual-patient-w-right div.the-media:after, .actual-patient-b-left div.the-media:after, .actual-patient-w-left div.the-media:after, .actual-patient-b div.imagebox__container:after, .actual-patient-b-center div.imagebox__container:after, .actual-patient-w div.imagebox__container:after, .actual-patient-w-center div.imagebox__container:after, .actual-patient-b-right div.imagebox__container:after, .actual-patient-w-right div.imagebox__container:after, .actual-patient-b-left div.imagebox__container:after, .actual-patient-w-left div.imagebox__container:after {
+    content:"Actual Patient";
+    position: absolute;
+    z-index: 123;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.actual-patients-b div.the-media:after, .actual-patients-b-center div.the-media:after, .actual-patients-w div.the-media:after, .actual-patients-w-center div.the-media:after, .actual-patients-b-right div.the-media:after, .actual-patients-w-right div.the-media:after, .actual-patients-b-left div.the-media:after, .actual-patients-w-left div.the-media:after, .actual-patients-b div.imagebox__container:after, .actual-patients-b-center div.imagebox__container:after, .actual-patients-w div.imagebox__container:after, .actual-patients-w-center div.imagebox__container:after, .actual-patients-b-right div.imagebox__container:after, .actual-patients-w-right div.imagebox__container:after, .actual-patients-b-left div.imagebox__container:after, .actual-patients-w-left div.imagebox__container:after {
+    content:"Actual Patients";
+    position: absolute;
+    z-index: 123;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+/* black text with a hint of white shadow for readability */
+ .actual-patient-b, .actual-patient-b-center, .actual-patient-b-left, .actual-patient-b-right, .actual-patients-b, .actual-patients-b-center, .actual-patients-b-left, .actual-patients-b-right {
+    color: #111111;
+    text-shadow: 0 0 2px #eeeeee;
+}
+/* white text with a hint of black shadow for readability */
+ .actual-patient-w, .actual-patient-w-center, .actual-patient-w-left, .actual-patient-w-right, .actual-patients-w, .actual-patients-w-center, .actual-patients-w-left, .actual-patients-w-right {
+    color: #eeeeee;
+    text-shadow: 0 0 2px #111111;
+}
+/* centered */
+ .actual-patient-b div.the-media:after, .actual-patient-b-center div.the-media:after, .actual-patient-w div.the-media:after, .actual-patient-w-center div.the-media:after, .actual-patients-b div.the-media:after, .actual-patients-b-center div.the-media:after, .actual-patients-w div.the-media:after, .actual-patients-w-center div.the-media:after, .actual-patient-b div.imagebox__container:after, .actual-patient-b-center div.imagebox__container:after, .actual-patient-w div.imagebox__container:after, .actual-patient-w-center div.imagebox__container:after, .actual-patients-b div.imagebox__container:after, .actual-patients-b-center div.imagebox__container:after, .actual-patients-w div.imagebox__container:after, .actual-patients-w-center div.imagebox__container:after {
+    float: none;
+    text-align: center;
+}
+/* right aligned */
+ .actual-patient-b-right div.the-media:after, .actual-patient-w-right div.the-media:after, .actual-patients-b-right div.the-media:after, .actual-patients-w-right div.the-media:after, .actual-patient-b-right div.imagebox__container:after, .actual-patient-w-right div.imagebox__container:after, .actual-patients-b-right div.imagebox__container:after, .actual-patients-w-right div.imagebox__container:after {
+    float: right;
+    text-align: right;
+}
+/* left aligned */
+ .actual-patient-b-left div.the-media:after, .actual-patient-w-left div.the-media:after, .actual-patients-b-left div.the-media:after, .actual-patients-w-left div.the-media:after, .actual-patient-b-left div.imagebox__container:after, .actual-patient-w-left div.imagebox__container:after, .actual-patients-b-left div.imagebox__container:after, .actual-patients-w-left div.imagebox__container:after {
+    float: left;
+    text-align: left;
+}
+/*****************************/
+
+/* end of actual patient css */
+
+/*****************************/

@@ -1,0 +1,50 @@
+<p>for-loop:</p>
+<div id="forSum"></div>
+<p>while-loop:</p>
+<div id="whileSum"></div>
+<p>recursion:</p>
+<div id="recursiveSum"></div>
+
+<script>
+/*
+ * Write three functions that compute the sum of the numbers in a given list using a for-loop, a while-loop, and recursion.
+ */
+
+var list = [1, 2, 3, 4, 5];
+
+// for loop
+for (var listSpot = 0; listSpot < list.length; listSpot++) {
+    var forNum = list[listSpot];
+    if (forSum) forSum = forSum + forNum;
+    else var forSum = forNum;
+}
+
+// while loop
+var listSpot = 0;
+while (listSpot < list.length) {
+    var whileNum = list[listSpot];
+    if (whileSum) whileSum = whileSum + whileNum;
+    else var whileSum = whileNum;
+    listSpot++;
+}
+
+// recursion
+var listSpot = 0;
+var recurNum = 0;
+var rSum = 0;
+
+function recursiveSum() {
+    recurNum = list[listSpot];
+    rSum = recurNum + rSum;
+    listSpot++;
+    while (listSpot < list.length) {
+        recursiveSum();
+    }
+    return rSum;
+}
+recursiveSum();
+
+document.getElementById("forSum").innerHTML = forSum;
+document.getElementById("whileSum").innerHTML = whileSum;
+document.getElementById("recursiveSum").innerHTML = rSum;
+</script>

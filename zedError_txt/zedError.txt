@@ -1,0 +1,117 @@
+
+ry@~:$ zed
+WARNING: Both the zed directory and its parent should be writable by
+the user who runs Zed in order for auto-update to work. In your current
+setup this is NOT the case, please move Zed somewhere else or change
+permissions.
+Checking for update
+Caught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorCaught exception: Error: Script error
+http://requirejs.org/docs/errors.html#scripterrorAttempting to connect to wss://remote.zedapp.org:443/editorsocket
+Connected to zedrem server!
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+Ping
+Got pong
+

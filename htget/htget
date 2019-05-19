@@ -1,0 +1,11 @@
+#!/bin/sh
+##
+## wget -N https://gist.githubusercontent.com/ryanpcmcquen/271d889c1a5a21029c9e/raw/htget -P /usr/local/bin/ && chmod 755 /usr/local/bin/htget
+##
+## run as:
+## htget example.com
+##
+## NOTE: you have to feed httrack the correct
+## version of the site, either www or non-www
+SITE=$1
+httrack -%P --robots=0 "${SITE}" -O "${SITE}/" -v

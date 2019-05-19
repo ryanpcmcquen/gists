@@ -1,0 +1,9 @@
+/* Fix tooltips blocking elements while hidden (Bootstrap 3.1.x). */
+.tooltip.fade.top {
+  display: none !important;
+}
+
+.tooltip.fade.top.in {
+  display: block !important;
+  left: 15% !important;
+}

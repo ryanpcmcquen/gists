@@ -1,0 +1,45 @@
+/* 3 responsive columns */
+
+@media all and (min-width: 1080px) {
+  .box {
+    float: left;
+  }
+  .box:nth-child(-n+2) {
+    margin-right: 1em;
+  }
+  .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 1079px) {
+  .box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    position: relative;
+    clear: both;
+    display: block;
+  }
+  .box-container {
+    display: block;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+.box {
+  width: 20em;
+  height: 15em;
+  border: 1px solid #000000;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.box-container {
+  position: relative;
+}

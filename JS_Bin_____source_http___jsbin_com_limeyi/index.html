@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+#site .btn.btn-inverted-corners {
+  display: inline-block;
+  color: #ffffff;
+  padding: 0 1rem;
+  border-style: solid;
+  border-width: 20px;
+  font-size: 18px;
+  padding: 5px;
+  -moz-border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature.png") 20 repeat;
+  -webkit-border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature.png") 20 repeat;
+  -o-border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature.png") 20 repeat;
+  border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature.png") 20 fill repeat;
+  text-decoration: none;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0);
+  /* Preload hover image */
+}
+#site .btn.btn-inverted-corners:after {
+  background: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature_hover.png");
+}
+#site .btn.btn-inverted-corners:hover {
+  -moz-border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature_hover.png") 20 repeat;
+  -webkit-border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature_hover.png") 20 repeat;
+  -o-border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature_hover.png") 20 repeat;
+  border-image: url("http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature_hover.png") 20 fill repeat;
+  background: transparent;
+  color: #ffffff !important;
+}
+</style>
+</head>
+<body>
+<div id="site">
+  <a href="#" class="btn btn-inverted-corners">Hello</a>
+  <a href="#" class="btn btn-inverted-corners">Well hey</a>
+</div>
+
+
+<script id="jsbin-source-css" type="text/css">@fancy-btn-image: "http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature.png";
+@fancy-btn-image-hover: "http://signatured.staging.wpengine.com/wp-content/uploads/inverted-corners_signature_hover.png";
+
+@inverted-border-image-parameters: 20;
+
+#site {
+  .btn.btn-inverted-corners {
+    display: inline-block;
+    color: #ffffff;
+    padding: 0 1rem;
+    border-style: solid;
+    border-width: 20px;
+    font-size: 18px;
+    padding: 5px;
+    -moz-border-image: url(@fancy-btn-image) @inverted-border-image-parameters repeat;
+    -webkit-border-image: url(@fancy-btn-image) @inverted-border-image-parameters repeat;
+    -o-border-image: url(@fancy-btn-image) @inverted-border-image-parameters repeat;
+    border-image: url(@fancy-btn-image) @inverted-border-image-parameters fill repeat;
+    text-decoration: none;
+    font-weight: 400;
+    background: rgba(0,0,0,0);
+    /* Preload hover image */
+    &:after {
+      background: url(@fancy-btn-image-hover);
+    }
+    &:hover {
+      -moz-border-image: url(@fancy-btn-image-hover) @inverted-border-image-parameters repeat;
+      -webkit-border-image: url(@fancy-btn-image-hover) @inverted-border-image-parameters repeat;
+      -o-border-image: url(@fancy-btn-image-hover) @inverted-border-image-parameters repeat;
+      border-image: url(@fancy-btn-image-hover) @inverted-border-image-parameters fill repeat;
+      background: transparent;
+      color: #ffffff !important;
+    }
+  }
+}</script>
+</body>
+</html>

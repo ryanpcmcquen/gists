@@ -1,0 +1,56 @@
+/*
+Thanks to this blog post for the idea:
+https://medium.com/@docodemore/an-alternative-to-operator-mono-font-6e5d040e1c7e
+This is a modified version of that using `Script12 BT` instead of `flottflott`
+and updated for the changes in Atom's selector syntax.
+
+Source:
+https://gist.github.com/ryanpcmcquen/f99453c871b4ce393fea5a274eed4cb3
+*/
+
+atom-text-editor {
+    font-family: 'Fira Code';
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+atom-text-editor.editor {
+
+    .syntax--string.syntax--quoted,
+    .syntax--string.syntax--regexp {
+        -webkit-font-feature-settings: "liga" off, "calt" off;
+    }
+
+    .syntax--storage,
+    .syntax--type .syntax--function,
+    .syntax--source.syntax--js.syntax--jsx > .syntax--keyword.syntax--control.syntax--flow.syntax--js {
+        font-family: 'Script12 BT';
+    }
+
+    .syntax--comment {
+        font-style: italic;
+    }
+
+    .indent-guide,
+    .syntax--variable,
+    .syntax--source.syntax--js.syntax--jsx,
+    .syntax--storage.syntax--type.syntax--function.syntax--arrow.syntax--js {
+        font-family: 'Fira Code';
+        font-style: normal;
+    }
+
+    .syntax--storage,
+    .syntax--type .syntax--function,
+    .syntax--storage.syntax--type.syntax--function.syntax--arrow.syntax--js,
+    .syntax--source.syntax--js.syntax--jsx > .syntax--keyword.syntax--control.syntax--flow.syntax--js {
+        font-size: 115%;
+        line-height: 0.75;
+    }
+
+    /* Spread looks unwieldy with these fancy fonts. */
+    .syntax--keyword.syntax--operator.syntax--spread,
+    .syntax--keyword.syntax--operator.syntax--spread.syntax--js,
+    .syntax--keyword.syntax--operator.syntax--spread.syntax--jsx {
+        font-family: monospace;
+    }
+}

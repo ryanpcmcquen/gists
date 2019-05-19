@@ -1,0 +1,1 @@
+const arrayMeIfEmpty = item => Array.isArray(item) ? item : [];

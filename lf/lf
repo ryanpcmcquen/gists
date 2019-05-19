@@ -1,0 +1,8 @@
+#!/bin/sh
+## sudo wget -N https://gist.githubusercontent.com/ryanpcmcquen/f9c3eb6e0a7272a31a74/raw/lf -P /usr/local/bin; sudo chmod 755 /usr/local/bin/lf
+## easy shortcut to lftp in to sftp servers
+
+PORTNUMBER=${3:-22}
+
+echo "You will run: lftp -e \"set sftp:auto-confirm yes;\" sftp://"${1}"@"${2}":"${PORTNUMBER}""
+lftp -e "set sftp:auto-confirm yes;" sftp://"${1}"@"${2}":"${PORTNUMBER}"

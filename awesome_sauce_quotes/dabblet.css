@@ -1,0 +1,19 @@
+/** awesome sauce quotes
+ */
+
+span {
+  font-family: ubuntu;
+  font-size: 2rem;  
+}
+
+q {
+  font-family: ubuntu;
+  quotes: "“" "”" "‘" "’";
+  font-size: 2rem;
+}
+q:before {
+  content: open-quote;
+}
+q:after {
+  content: close-quote;
+}

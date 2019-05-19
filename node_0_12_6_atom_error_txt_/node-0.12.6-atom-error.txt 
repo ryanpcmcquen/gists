@@ -1,0 +1,11 @@
+npm: v2.11.2
+Installing build modules...
+Installing apm...
+Native thread-sleep not available.
+This will result in much slower performance, but it will still work.
+You should re-install spawn-sync or upgrade to the lastest version of node if possible.
+Check /tmp/SBo/atom-1.0.7/apm/node_modules/atom-package-manager/node_modules/yargs/node_modules/os-locale/node_modules/exec-file-sync/node_modules/spawn-sync/error.log for more details
+Native thread-sleep not available.
+This will result in much slower performance, but it will still work.
+You should re-install spawn-sync or upgrade to the lastest version of node if possible.
+Check /tmp/SBo/atom-1.0.7/apm/node_modules/atom-package-manager/node_modules/yargs/node_modules/os-locale/node_modules/exec-file-sync/node_modules/spawn-sync/error.log for more details

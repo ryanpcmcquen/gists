@@ -1,0 +1,18 @@
+#!/bin/sh
+PRGNAM=hall
+VERSION=0.5.8
+
+TMP=/tmp/SBo
+PKG=/tmp/SBo/package-$PRGNAM
+
+mkdir -p $PKG $TMP
+set -e
+mkdir -p $TMP/build/
+
+tar xvf $PRGNAM-$VERSION.tar.gz
+
+./configure \
+  --prefix=/usr
+
+make
+make install DESTDIR=$PKG

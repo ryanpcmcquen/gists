@@ -1,0 +1,20 @@
+export LAUNCH_URL=PLACE-LAUNCH-URL-NAME-HERE && dig \
+  $LAUNCH_URL.com ANY \
+  www.$LAUNCH_URL.com ANY \
+  mail.$LAUNCH_URL.com ANY \
+  webmail.$LAUNCH_URL.com ANY \
+  autodiscover.$LAUNCH_URL.com ANY \
+  admin.$LAUNCH_URL.com ANY \
+  2.$LAUNCH_URL.com ANY \
+  autoconfig.$LAUNCH_URL.com ANY \
+  cpanel.$LAUNCH_URL.com ANY \
+  ftp.$LAUNCH_URL.com ANY \
+  webdisk.$LAUNCH_URL.com ANY \
+  whm.$LAUNCH_URL.com ANY \
+  _autodiscover._tcp.$LAUNCH_URL.com ANY \
+  autoconfig.2.$LAUNCH_URL.com ANY \
+  autodiscover.2.$LAUNCH_URL.com ANY \
+  webdisk.2.$LAUNCH_URL.com ANY \
+  www.2.$LAUNCH_URL.com ANY \
+  _autodiscover._tcp.2.$LAUNCH_URL.com ANY \
+  sftp.$LAUNCH_URL.com ANY

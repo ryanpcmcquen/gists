@@ -1,0 +1,105 @@
+/* awesome card */
+
+@list-color: #000000;
+@front-card-back: #156AEA;
+@front-p: #ffffff;
+@back-p: #000000;
+
+.bio-card-container {
+  -webkit-perspective: 1000;
+}
+.bio-card-content {
+  padding: 10px;
+}
+
+
+.bio-card-container {
+  width: 245px;
+  height: 370px;
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.bio-card-container div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  /*hide the card that is behind (3D API)*/
+  -webkit-backface-visibility: hidden;
+  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.bio-card-container:hover .bio-card-front {
+  z-index: 2;
+  /*flip to back*/
+  -webkit-transform: rotateY(180deg);
+  transform:rotateY(180deg);
+}
+
+.bio-card-container:hover .bio-card-back {
+  z-index: 1;
+  /*flip to front*/
+  -webkit-transform: rotateY(0deg);
+  transform:rotateY(0deg);
+}
+
+.bio-card-front {
+  background: @front-card-back;
+  background: transparent;
+  /* put "front" content above flipped back content */
+  z-index: 3;
+  border: 0.1rem solid #168392;
+}
+
+.bio-card-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  color: #fff;
+  z-index: 2;
+  opacity: 1;
+  border: 0.15rem solid #168392;
+}
+
+.bio-card-image-overlay {
+  opacity: 0.8;
+  background-color: #000;
+}
+
+p.bio-card-text {
+  margin: 0 auto;
+  display: block;
+  font-weight: 400;
+  position: relative;
+  font-size: .85em;
+  margin-top: 5rem;
+  width: 200px;
+  padding: 25px;
+  text-align: center;
+}
+.bio-card-front p.bio-card-text {
+  color: @front-p;
+}
+
+.bio-card-back p.bio-card-text {
+  color: @back-p;
+  color: #eee;
+  text-align: left;
+}
+
+span.bio-card-cta {
+  position: relative;
+  font-size: 1rem;
+  color: #168392;
+}
+
+.bio-card-back p.bio-card-text {
+  margin-left: 10px;
+  width: 180px;
+}

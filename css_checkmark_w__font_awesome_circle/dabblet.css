@@ -1,0 +1,22 @@
+/**
+ * css checkmark w/ font-awesome circle
+ */
+
+.fa.fa-circle-o {
+  font-size: 2.5rem;
+  color: hsla(0, 0%, 0%, 0.3);
+  text-shadow: 0 0 0.1rem hsla(0, 0%, 0%, 0.25);
+}
+
+  
+  
+.system-checkmark:after {
+  font-size: 4rem;
+  font-weight: 100;
+  position: relative;
+  content: "✓";
+  top: -0.3rem;
+  left: -2.25rem;
+  color: hsla(198, 71%, 55%, 1);
+  text-shadow: 0.1rem 0.1rem 0.1rem hsla(0, 0%, 0%, 0.5);
+}

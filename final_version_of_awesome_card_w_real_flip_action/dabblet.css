@@ -1,0 +1,106 @@
+/* final version of awesome card w/real flip action */
+
+@card-front-color: #156AEA;
+@card-back-color: #000000;
+@border-color: #168392;
+@image-overlay-color: #000000;
+@cta-color: #168392;
+@bio-text-color: #aaaaaa;
+@bio-text-highlight: #ffffff;
+@sans-serif-font: myriad-pro;
+
+
+div.bio-card-container-box {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.bio-card-content {
+  padding: 10px;
+}
+.bio-card-container {
+  -webkit-perspective: 1000;
+  width: 245px;
+  height: 370px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.bio-card-container div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
+  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.bio-card-container:hover .bio-card-front {
+  /* flip to back */
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.bio-card-container:hover .bio-card-back {
+  z-index: 2;
+  /* flip to front */
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  opacity: 1;
+}
+.bio-card-front {
+  background: @card-front-color;
+  background: transparent;
+  /* put front content above flipped back content */
+  z-index: 1;
+  border: 0.1rem solid @border-color;
+}
+.bio-card-back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  color: @card-back-color;
+  z-index: 3;
+  opacity: 0;
+  border: 0.15rem solid @border-color;
+  font-family: @sans-serif-font;
+}
+.bio-card-back-image-overlay {
+  opacity: 0.8;
+  background-color: @image-overlay-color;
+  position: relative;
+  z-index: 2;
+}
+.bio-card-back p.bio-card-text {
+  color: @bio-text-color;
+  text-align: left;
+  width: 210px;
+  margin: 0 auto;
+  display: block;
+  font-weight: 100;
+  position: relative;
+  font-size: 1.5rem;
+  margin-top: 12rem;
+  padding: 0.15rem;
+  line-height: 1.2 !important;
+}
+.bio-card-back p.bio-card-text em {
+  color: @bio-text-highlight;
+}
+.bio-card-back p.bio-card-text span {
+  color: @bio-text-highlight;
+}
+a.bio-card-cta {
+  position: relative;
+  text-align: left;
+  margin-left: 1.85rem;
+  font-size: 1.75rem;
+  display: block !important;
+  color: @cta-color;
+}
+
+a.bio-card-cta:hover {
+  color: #eeeeee;
+}

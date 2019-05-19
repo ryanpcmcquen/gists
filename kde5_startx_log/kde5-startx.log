@@ -1,0 +1,86 @@
+xauth:  file /home/ry/.serverauth.1085 does not exist
+
+
+X.Org X Server 1.15.2
+Release Date: 2014-06-27
+X Protocol Version 11, Revision 0
+Build Operating System: Slackware 14.2 Slackware Linux Project
+Current Operating System: Linux slack64-w230ss 3.14.29 #2 SMP Fri Jan 16 13:45:58 CST 2015 x86_64
+Kernel command line: auto BOOT_IMAGE=Linux ro root=801 vt.default_utf8=1 acpi_osi=linux acpi_backlight=vendor
+Build Date: 17 December 2014  10:31:28PM
+ 
+Current version of pixman: 0.32.6
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Sun Feb  8 13:46:48 2015
+(==) Using config directory: "/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+Initializing built-in extension Generic Event Extension
+Initializing built-in extension SHAPE
+Initializing built-in extension MIT-SHM
+Initializing built-in extension XInputExtension
+Initializing built-in extension XTEST
+Initializing built-in extension BIG-REQUESTS
+Initializing built-in extension SYNC
+Initializing built-in extension XKEYBOARD
+Initializing built-in extension XC-MISC
+Initializing built-in extension XINERAMA
+Initializing built-in extension XFIXES
+Initializing built-in extension RENDER
+Initializing built-in extension RANDR
+Initializing built-in extension COMPOSITE
+Initializing built-in extension DAMAGE
+Initializing built-in extension MIT-SCREEN-SAVER
+Initializing built-in extension DOUBLE-BUFFER
+Initializing built-in extension RECORD
+Initializing built-in extension DPMS
+Initializing built-in extension Present
+Initializing built-in extension DRI3
+Initializing built-in extension X-Resource
+Initializing built-in extension XVideo
+Initializing built-in extension XVideo-MotionCompensation
+Initializing built-in extension XFree86-VidModeExtension
+Initializing built-in extension XFree86-DGA
+Initializing built-in extension XFree86-DRI
+Initializing built-in extension DRI2
+Loading extension GLX
+ksplashqml: error while loading shared libraries: libphonon4qt5experimental.so.4: cannot open shared object file: No such file or directory
+xset:  bad font path element (#10), possible causes are:
+    Directory does not exist or has wrong permissions
+    Directory missing fonts.dir
+    Incorrect font server address or syntax
+startkde: Starting up...
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ry'
+kdeinit5: preparing to launch 'libkdeinit5_klauncher'
+kdeinit5: Launched KLauncher, pid = 1155, result = 0
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ry'
+Qt: Session management error: networkIdsList argument is NULL
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ry'
+kdeinit5: opened connection to :0
+kdeinit5: preparing to launch 'libkdeinit5_kded5'
+kdeinit5: Launched KDED, pid = 1157 result = 0
+kdeinit5: preparing to launch 'libkdeinit5_kcminit_startup'
+Could not open kcminit_startup using a library: Cannot load library /usr/lib64/libkdeinit5_kcminit_startup: (libphonon4qt5experimental.so.4: cannot open shared object file: No such file or directory)
+kdeinit5: Launched 'kcminit_startup', pid = 1158 result = 0
+kcminit_startup: error while loading shared libraries: libphonon4qt5experimental.so.4: cannot open shared object file: No such file or directory
+kdeinit5: PID 1158 terminated.
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ry'
+kdeinit5: Got KWRAPPER 'ksmserver' from wrapper.
+kdeinit5: preparing to launch 'libkdeinit5_ksmserver'
+Could not open ksmserver using a library: Cannot load library /usr/lib64/libkdeinit5_ksmserver: (libphonon4qt5experimental.so.4: cannot open shared object file: No such file or directory)
+ksmserver: error while loading shared libraries: libphonon4qt5experimental.so.4: cannot open shared object file: No such file or directory
+kdeinit5: PID 1160 terminated.
+startkde: Shutting down...
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-ry'
+kdeinit5: terminate KDE.
+klauncher: Exiting on signal 1
+startkde: Running shutdown scripts...
+startkde: Done.
+xinit: connection to X server lost
+
+waiting for X server to shut down ..(EE) Server terminated successfully (0). Closing log file.
+

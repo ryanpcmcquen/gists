@@ -1,0 +1,42 @@
+#!/bin/sh
+LAUNCH_URL=$1
+if [ -d $HOME/scratchPad/ ]; then
+  DIGDUMPFILE="$HOME/scratchPad/digDomainLog.txt"
+else
+  DIGDUMPFILE="$HOME/digDomainLog.txt"
+fi
+dig \
+  $LAUNCH_URL ANY \
+  1.$LAUNCH_URL ANY \
+  10.$LAUNCH_URL ANY \
+  2.$LAUNCH_URL ANY \
+  admin.$LAUNCH_URL ANY \
+  assets.$LAUNCH_URL ANY \
+  autoconfig.$LAUNCH_URL ANY \
+  autoconfig.2.$LAUNCH_URL ANY \
+  _autodiscover._tcp.$LAUNCH_URL ANY \
+  _autodiscover._tcp.2.$LAUNCH_URL ANY \
+  autodiscover.$LAUNCH_URL ANY \
+  autodiscover.2.$LAUNCH_URL ANY \
+  blog.$LAUNCH_URL ANY \
+  calendar.$LAUNCH_URL ANY \
+  cdn.$LAUNCH_URL ANY \
+  cpanel.$LAUNCH_URL ANY \
+  docs.$LAUNCH_URL ANY \
+  ftp.$LAUNCH_URL ANY \
+  google.$LAUNCH_URL ANY \
+  info.$LAUNCH_URL ANY \
+  mail.$LAUNCH_URL ANY \
+  nas.$LAUNCH_URL ANY \
+  secure.$LAUNCH_URL ANY \
+  sftp.$LAUNCH_URL ANY \
+  stats.$LAUNCH_URL ANY \
+  video.$LAUNCH_URL ANY \
+  videos.$LAUNCH_URL ANY \
+  webdisk.$LAUNCH_URL ANY \
+  webdisk.2.$LAUNCH_URL ANY \
+  webmail.$LAUNCH_URL ANY \
+  whm.$LAUNCH_URL ANY \
+  www.$LAUNCH_URL ANY \
+  www.2.$LAUNCH_URL ANY \
+> $DIGDUMPFILE

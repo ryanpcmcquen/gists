@@ -1,0 +1,103 @@
+{
+  //If you want to disable update checks at startup, change this
+  "promptForUpdates": true,
+
+  "defaultTheme": "chrome", //This should be any of the supported Ace themes
+  "uiTheme": "light", //dark or light, your pick
+  "autoHideProject": true, //collapse the project view until you hover
+  "immersiveFullscreen": false, //hides menus/tabs in Chrome OS fullscreen mode
+  "highlightLine": true,
+  "hideGutter": false, //set to true to hide the line numbering
+
+  "showWhitespace": false, //show whitespace characters (spaces, tabs, returns)
+  "indentation": 2, //indentation size
+  "useTabs": false, //will turn off Ace's setUseSoftTabs() option and use tab characters instead
+  "wordWrap": true,
+  "wrapLimit": false, //Set to the number of characters you want or false for full window
+  "showMargin": false,
+  "lineEndings": "auto", //newline format - "windows", "unix", or "auto"
+  "scrollPastEnd": true, //allow the editor to scroll past the end of the document
+  "trimTrailingWhitespace": true, //run "Trim Trailing Whitespace" on save
+  "trimEmptyLines": false, //should the trim whitespace command also truncate empty lines?
+
+  //only fixed-width fonts supported, for now
+  "fontFamily": "",
+  "fontSize": 16,
+
+  //Web workers are used for code hinting in PHP, JavaScript, and JSON.
+  //We don't yet have a way to set the worker options, but you can disable it.
+  "useWorker": true,
+  //autocomplete triggers on Ctrl-Space
+  "autocomplete": true,
+  //animated scrolling in the editor when using command pallette and tern
+  "animatedScroll": true,
+
+  //By default, the palette searches the current file's text only unless you widen the scope.
+  //If you'd like it to search all open files by default, set this option to true.
+  "searchAllFiles": false,
+  //set a regex to ignore in project view/search
+  "ignoreFiles": "node_modules",
+
+  //Crazy? You might like Vim keybindings.
+  "emulateVim": false,
+
+  //Whether to show the "New file" tab button on the tab bar;
+  "showNewTabButton": false,
+
+  //tern options
+  "tern": {
+    //http://ternjs.net/doc/manual.html#typedef
+    //avilable: browser, ecma5, jquery, underscore, ecma6
+    "defs": ["browser", "ecma5"],
+
+    //http://ternjs.net/doc/manual.html#plugins
+    //NOTE: tern and node plugins do not appear to be working correctly, issue is likely w/ Caret-T/ChromeApp architecture (not tern or ace plugin). to debug this, open dev tools and go to chrome://inspect/#apps to see console for the sandbox that is running tern
+    "plugins": {
+      //http://ternjs.net/doc/manual.html#plugin_doc_comment
+      //TODO: when tern is upgraded to latest version, fullDocs wil have a different name
+      "doc_comment": {
+        "fullDocs": true
+      }
+      /* [Uncomment to enable]
+      //http://ternjs.net/doc/manual.html#plugin_node
+      //The node.js plugin, called "node", provides variables that are part of the node environment, such as process and require, and hooks up require to try and find the dependencies that are being loaded, and assign them the correct types. It also includes types for the built-in modules that node.js provides ("fs", "http", etc).
+      ,"node": {
+          //Can be set to true to disable dynamic loading of required modules entirely, or to a regular expression to disable loading of files that match the expression.
+          "dontLoad": false,
+          // If dontLoad isn’t given, this setting is checked. If it is a regular expression, the plugin will only load files that match the expression.
+          "load": "",
+          //Can be used to assign JSON type definitions to certain modules, so that those are loaded instead of the source code itself. If given, should be an object mapping module names to either JSON objects defining the types in the module, or a string referring to a file name (relative to the project directory) that contains the JSON data.
+          "modules": ""
+      }
+      */
+      /* [Uncomment to enable]
+      //http://ternjs.net/doc/manual.html#plugin_requirejs
+      //This plugin ("requirejs") teaches the server to understand RequireJS-style dependency management. It defines the global functions define and requirejs, and will do its best to resolve dependencies and give them their proper types.
+      ,"requirejs": {
+          //The base path to prefix to dependency filenames.
+          "baseURL": "",
+          // An object mapping filename prefixes to specific paths. For example {"acorn": "lib/acorn/"}.
+          "paths": "",
+          // An object that can be used to override some dependency names to refer to predetermined types. The value associated with a name can be a string starting with the character =, in which case the part after the = will be interpreted as a global variable (or dot-separated path) that contains the proper type. If it is a string not starting with =, it is interpreted as the path to the file that contains the code for the module. If it is an object, it is interpreted as JSON type definition.
+          "override": ""
+      }*/
+    }
+  },
+
+  //js beautify options: http://jsbeautifier.org/
+  "beautify": {
+    "space_before_conditional": true,
+    "keep_array_indentation": false,
+    "preserve_newlines": true,
+    "jslint_happy": true,
+    "max_preserve_newlines": 3,
+    "break_chained_methods": false,
+    "indent_scripts": "normal",
+    //[collapse|collapse-preserve-inline|expand|end-expand|none]
+    "brace_style": "collapse",
+    "unescape_strings": false,
+    "wrap_line_length": 80,
+    "space_after_anon_function": true,
+    "max_char": 0
+  }
+}

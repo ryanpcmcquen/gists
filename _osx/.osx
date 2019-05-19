@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+# curl -o ~/.osx https://gist.githubusercontent.com/ryanpcmcquen/b2e608311f286a4ab3e1/raw/.osx && bash ~/.osx
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Disable smart dashes as they’re annoying when typing code.
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable automatic periods with a double space:
+defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
+
+# Disable smart quotes as they’re annoying when typing code.
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Set a shorter delay until key repeat:
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Set a blazingly fast keyboard repeat rate:
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+##########
+# Config #
+##########
+
+# Get the command line tools!
+[ ! "`xcodebuild -version`" ] && \
+    xcodebuild -versionxcode-select --install && \
+    sudo xcodebuild -license accept
+# Install homebrew:
+[ ! "`which brew`" ] && \
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update && brew upgrade
+
+# Emacs customizations for Prelude:
+[ -d ~/.emacs.d/personal ] && \
+    curl -o ~/.emacs.d/personal/McQuen.el https://gist.githubusercontent.com/ryanpcmcquen/1ca6d1d7b5c8580aebef4f840e29f83a/raw/McQuen.el
+
+# Hammerspoon config:
+[ -d ~/.hammerspoon ] && \
+    curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/hammerspoon-init.lua
+
+# Install Textadept and my config for it:
+wget -N https://gist.githubusercontent.com/ryanpcmcquen/655cb3cc60f9d064738903e59504a5fd/raw/installLatestTextadeptMac.sh -P /tmp/ && \
+    bash /tmp/installLatestTextadeptMac.sh
+
+# Vim!
+curl -o ~/.vimrc https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.vimrc
+
+# ZeroBrane Studio config:
+[ -d ~/.zbstudio ] && \
+    curl -o ~/.zbstudio/user.lua https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.zbstudio/user.lua

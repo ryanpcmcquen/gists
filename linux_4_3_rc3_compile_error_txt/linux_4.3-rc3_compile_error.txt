@@ -1,0 +1,23 @@
+  GEN     arch/x86/lib/inat-tables.c
+  CC      arch/x86/lib/inat.o
+  CC      arch/x86/lib/insn.o
+  AS      arch/x86/lib/memcpy_64.o
+  AS      arch/x86/lib/memmove_64.o
+  AS      arch/x86/lib/memset_64.o
+  CC      arch/x86/lib/misc.o
+  AS      arch/x86/lib/putuser.o
+  AS      arch/x86/lib/rwsem.o
+  CC      arch/x86/lib/usercopy.o
+  CC      arch/x86/lib/usercopy_64.o
+  AR      arch/x86/lib/lib.a
+  LINK    vmlinux
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+arch/x86/built-in.o: In function `hv_machine_crash_shutdown':
+mshyperv.c:(.text+0x31dcf): undefined reference to `native_machine_crash_shutdown'
+make: *** [vmlinux] Error 1

@@ -1,0 +1,14 @@
+#services {
+  margin-top: 50px;
+}
+
+/* 2nd column only */
+#services .service:nth-child(2):before {
+  content: " ";
+  background-image: url("http://www.fireweeddentistry.com/wp-content/uploads/2014/12/reviewpro_completepackage_fireweed_reviewpro_badge.png");
+  position: absolute;
+  width: 200px;
+  height: 85px;
+  margin-top: -90px;
+}
+

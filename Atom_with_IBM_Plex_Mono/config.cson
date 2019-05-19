@@ -1,0 +1,26 @@
+"*":
+    core:
+        telemetryConsent: "limited"
+        themes: [
+          "atom-material-ui"
+          "atom-material-syntax-dark"
+        ]
+        uriHandlerRegistration: "always"
+    editor:
+        fontFamily: "'IBM Plex Mono', NovaMono, Menlo, Consolas, DejaVu Sans Mono, monospace"
+        showInvisibles: true
+        softTabs: true
+        tabLength: 4
+        tabType: "soft"
+    "line-ending-selector":
+        defaultLineEnding: "LF"
+    "prettier-atom":
+        formatOnSaveOptions:
+            enabled: true
+        useEslint: true
+    "spell-check":
+        excludedScopes: [
+            ".source"
+        ]
+    welcome:
+        showOnStartup: false

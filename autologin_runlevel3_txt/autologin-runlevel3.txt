@@ -1,0 +1,2 @@
+Add to /etc/rc.d/rc.local:
+su - <USERNAME> -c startx
