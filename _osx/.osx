@@ -35,8 +35,11 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 brew update && brew upgrade
 
 # Emacs customizations for Prelude:
-[ -d ~/.emacs.d/personal ] && \
+if [ -d ~/.emacs.d/personal ]; then
     curl -o ~/.emacs.d/personal/McQuen.el https://gist.githubusercontent.com/ryanpcmcquen/1ca6d1d7b5c8580aebef4f840e29f83a/raw/McQuen.el
+else
+    curl -o ~/.emacs https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.emacs
+fi
 
 # Hammerspoon config:
 [ -d ~/.hammerspoon ] && \
