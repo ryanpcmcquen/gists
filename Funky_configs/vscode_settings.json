@@ -2,7 +2,7 @@
     "editor.find.seedSearchStringFromSelection": false,
     "editor.fontFamily": "'IBM Plex Mono', NovaMono, monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 20,
+    "editor.fontSize": 18,
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.renderControlCharacters": false,
@@ -53,21 +53,20 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.validate.enable": false,
     "php.suggest.basic": false,
-    "phpformatter.arguments": [
-        "--rules=@PSR2"
-    ],
-    "phpformatter.composer": true,
+    "php.validate.enable": false,
     "stretchySpaces.targetIndentation": 4,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "terminal.integrated.fontSize": 16,
     "typescript.validate.enable": false,
-    "window.title": "${activeEditorLong}",
-    "window.zoomLevel": 0,
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.settings.editor": "json",
     "vscode_custom_css.imports": [
         "file:///Users/rmcquen/.vscode/extensions/robbowen.synthwave-vscode-0.0.6/synthwave84.css"
     ],
-    "workbench.colorTheme": "Twilight Operator"
+    "window.title": "${activeEditorLong}",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Twilight Operator",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.settings.editor": "json"
 }
