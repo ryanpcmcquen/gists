@@ -45,6 +45,14 @@ fi
 [ -d ~/.hammerspoon ] && \
     curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/hammerspoon-init.lua
 
+# Sublime Text!
+SUBLIME_TEXT_CONFIG_DIR="~/Library/Application Support/Sublime Text 3/Packages/User"
+if [ -d ${SUBLIME_TEXT_CONFIG_DIR} ]; then
+    wget -N https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Default.sublime-keymap -P ${SUBLIME_TEXT_CONFIG_DIR}
+    wget -N https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Default.sublime-mousemap -P ${SUBLIME_TEXT_CONFIG_DIR}
+    wget -N https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Preferences.sublime-settings -P ${SUBLIME_TEXT_CONFIG_DIR}
+fi
+
 # Install Textadept and my config for it:
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/655cb3cc60f9d064738903e59504a5fd/raw/installLatestTextadeptMac.sh -P /tmp/ && \
     bash /tmp/installLatestTextadeptMac.sh
