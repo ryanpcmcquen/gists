@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# curl -o ~/.osx https://gist.githubusercontent.com/ryanpcmcquen/b2e608311f286a4ab3e1/raw/.osx && bash ~/.osx
+# curl -o ~/.osx https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/.osx && bash ~/.osx
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -48,9 +48,10 @@ fi
 # Sublime Text!
 SUBLIME_TEXT_CONFIG_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 if [ -d "${SUBLIME_TEXT_CONFIG_DIR}" ]; then
-    wget -N https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Default.sublime-keymap -P "${SUBLIME_TEXT_CONFIG_DIR}"
-    wget -N https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Default.sublime-mousemap -P "${SUBLIME_TEXT_CONFIG_DIR}"
-    wget -N https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Preferences.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Default.sublime-keymap -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Default.sublime-mousemap -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/JavaScript.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Preferences.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
 fi
 
 # Install Textadept and my config for it:
