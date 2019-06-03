@@ -2,9 +2,9 @@
 
 PROMPT='
 $(_user_host)${_current_dir} $(git_prompt_info) $(_ruby_version)
-%{$fg[$CARETCOLOR]%}λ%{$resetcolor%} '
+%{${fg[$CARETCOLOR]}%}λ%{$resetcolor%} '
 
-PROMPT2='%{$fg[$CARETCOLOR]%}ƛ%{$reset_color%} '
+PROMPT2='%{${fg[$CARETCOLOR]}%}ƛ%{$reset_color%} '
 
 RPROMPT='$(_vi_status)%{$(echotc UP 1)%}$(_git_time_since_commit) $(git_prompt_status) ${_return_status}%{$(echotc DO 1)%}'
 
@@ -66,8 +66,7 @@ function _git_time_since_commit() {
             commit_age="${minutes}m"
         fi
 
-        color=$ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL
-        echo "$color$commit_age%{$reset_color%}"
+        echo "$commit_age%{$reset_color%}"
     fi
 }
 
