@@ -2,7 +2,7 @@
     name = Ryan McQuen
     email = rmcquen@funko.com
 [core]
-    excludesfile = /Users/rmcquen/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [merge]
     tool = smerge
 [mergetool "vscode"]
