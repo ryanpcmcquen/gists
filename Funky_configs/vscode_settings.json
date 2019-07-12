@@ -49,6 +49,7 @@
     },
     "files.autoSave": "off",
     "files.eol": "\n",
+    "files.maxMemoryForLargeFilesMB": 6144,
     "files.trimTrailingWhitespace": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.validate.enable": false,
