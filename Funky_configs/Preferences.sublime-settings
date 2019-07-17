@@ -12,8 +12,8 @@
     "default_line_ending": "unix",
     "ensure_newline_at_eof_on_save": true,
     "fallback_encoding": "UTF-8",
-    "font_face": "Input",
-    "font_size": 17,
+    "font_face": "BPMono",
+    "font_size": 18,
     "ignored_packages": ["Vintage"],
     "js_prettier": {
         "auto_format_on_save": false,
