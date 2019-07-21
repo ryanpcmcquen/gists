@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# wget -N https://gist.githubusercontent.com/ryanpcmcquen/655cb3cc60f9d064738903e59504a5fd/raw/installLatestTextadept.sh -P /tmp/ && bash /tmp/installLatestTextadept.sh
+# wget -N https://gist.githubusercontent.com/ryanpcmcquen/655cb3cc60f9d064738903e59504a5fd/raw/.installLatestTextadept.sh -P ~/ && bash ~/.installLatestTextadept.sh
 
 APP="textadept"
 APPSHORTCUT="ta"

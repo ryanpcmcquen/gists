@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# wget -N https://gist.githubusercontent.com/ryanpcmcquen/655cb3cc60f9d064738903e59504a5fd/raw/installLatestTextadeptMac.sh -P /tmp/ && bash /tmp/installLatestTextadeptMac.sh
+# wget -N https://gist.githubusercontent.com/ryanpcmcquen/655cb3cc60f9d064738903e59504a5fd/raw/.installLatestTextadeptMac.sh -P ~/ && bash ~/.installLatestTextadeptMac.sh
 
 APP="textadept"
 ALTAPPNAME="Textadept"
