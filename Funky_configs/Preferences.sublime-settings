@@ -1,39 +1,40 @@
 {
-	"ClangFormat": {
-		"format_on_save": true,
-		"languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"],
-		"style": "WebKit"
-	},
-	"always_show_minimap_viewport": false,
-	"auto_complete_commit_on_tab": true,
-	"block_caret": true,
-	"color_scheme": "Packages/User/Witness.sublime-color-scheme",
-	"default_encoding": "UTF-8",
-	"default_line_ending": "unix",
-	"ensure_newline_at_eof_on_save": true,
-	"fallback_encoding": "UTF-8",
-	"font_face": "BPMono",
-	"font_size": 20,
-	"ignored_packages": ["Vintage"],
-	"js_prettier": {
-		"auto_format_on_save": false,
-		"prettier_options": {
-			"arrowParens": "always",
-			"semi": false,
-			"singleQuote": true,
-			"tabWidth": 4
-		}
-	},
-	"line_numbers": false,
-	"line_padding_bottom": 2,
-	"line_padding_top": 2,
-	"margin": 0,
-	"show_encoding": true,
-	"show_full_path": true,
-	"show_line_endings": true,
-	"tab_size": 4,
-	"theme": "Adaptive.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+    "ClangFormat": {
+        "format_on_save": true,
+        "languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"],
+        "style": "WebKit"
+    },
+    "always_show_minimap_viewport": false,
+    "auto_complete_commit_on_tab": true,
+    "auto_match_enabled": false,
+    "block_caret": true,
+    "color_scheme": "Packages/User/Witness.sublime-color-scheme",
+    "default_encoding": "UTF-8",
+    "default_line_ending": "unix",
+    "ensure_newline_at_eof_on_save": true,
+    "fallback_encoding": "UTF-8",
+    "font_face": "BPMono",
+    "font_size": 20,
+    "ignored_packages": ["Vintage"],
+    "js_prettier": {
+        "auto_format_on_save": false,
+        "prettier_options": {
+            "arrowParens": "always",
+            "semi": false,
+            "singleQuote": true,
+            "tabWidth": 4
+        }
+    },
+    "line_numbers": false,
+    "line_padding_bottom": 2,
+    "line_padding_top": 2,
+    "margin": 0,
+    "show_encoding": true,
+    "show_full_path": true,
+    "show_line_endings": true,
+    "tab_size": 4,
+    "theme": "Adaptive.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true,
+    "word_wrap": false
 }
