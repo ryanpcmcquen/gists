@@ -4,9 +4,9 @@
 # curl https://gist.githubusercontent.com/ryanpcmcquen/8a7ddc72460eca0dc1f2dc389674dde1/raw/darkify_slack.sh | sh
 
 if [ "`uname -s`" = "Darwin" ]; then
-    SLACK_INTEROP_JS="/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js"
+    SLACK_INTEROP_JS="/Applications/Slack.app/Contents/Resources/app.asar.unpacked/dist/ssb-interop.bundle.js"
 else
-    SLACK_INTEROP_JS="/usr/lib/slack/resources/app.asar.unpacked/src/static/ssb-interop.js"
+    SLACK_INTEROP_JS="/usr/lib/slack/resources/app.asar.unpacked/dist/ssb-interop.bundle.js"
 fi
 
 # Thanks to: https://gist.github.com/DrewML/0acd2e389492e7d9d6be63386d75dd99#gistcomment-2358430

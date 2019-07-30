@@ -4,9 +4,9 @@
 # curl https://gist.githubusercontent.com/ryanpcmcquen/8a7ddc72460eca0dc1f2dc389674dde1/raw/plexify_slack.sh | sh
 
 if [ "`uname -s`" = "Darwin" ]; then
-    SLACK_INTEROP_JS="/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js"
+    SLACK_INTEROP_JS="/Applications/Slack.app/Contents/Resources/app.asar.unpacked/dist/ssb-interop.bundle.js"
 else
-    SLACK_INTEROP_JS="/usr/lib/slack/resources/app.asar.unpacked/src/static/ssb-interop.js"
+    SLACK_INTEROP_JS="/usr/lib/slack/resources/app.asar.unpacked/dist/ssb-interop.bundle.js"
 fi
 
 if [ -z "`grep tt__customCss ${SLACK_INTEROP_JS}`" ]; then
