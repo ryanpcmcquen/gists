@@ -1,0 +1,23 @@
+{
+    "bootstrapped": true,
+    "in_process_packages": [],
+    "installed_packages": [
+        "Clang Format",
+        "DashDoc",
+        "DocBlockr",
+        "Gremlins",
+        "JsPrettier",
+        "MarkdownPreview",
+        "Package Control",
+        "PHP-Twig",
+        "phpfmt",
+        "PHPIntel",
+        "StandardFormat",
+        "SublimeCodeIntel",
+        "SublimeLinter",
+        "SublimeLinter-eslint",
+        "SublimeLinter-php",
+        "Terminus",
+        "uroboroSQL Formatter"
+    ]
+}

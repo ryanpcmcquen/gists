@@ -62,6 +62,8 @@ if [ -d "${SUBLIME_TEXT_CONFIG_DIR}" ]; then
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/JavaScript.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/phpfmt.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Preferences.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Xdebug.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Package%20Control.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
 fi
 
 # Textadept:
