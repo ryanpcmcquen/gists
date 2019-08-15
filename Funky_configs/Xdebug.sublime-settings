@@ -29,6 +29,7 @@
     "close_on_stop": true,
     "host": "127.0.0.1",
     "ide_key": "fun.xdebug",
+    "max_depth": 3,
     "path_mapping": {
         "/var/www/html": "/Users/rmcquen/repos/funko-craftcms"
     },
