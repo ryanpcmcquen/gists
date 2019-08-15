@@ -21,6 +21,7 @@
         "*.swf",
         "*.jar",
         "*.zip",
+
         "*.csv",
         "*.gz",
         "*.sql",
@@ -40,6 +41,7 @@
     "ignored_packages": ["Vintage"],
     "index_exclude_patterns": [
         "*.log",
+
         "*.csv",
         "*.gz",
         "*.json",
