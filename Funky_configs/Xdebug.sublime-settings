@@ -33,6 +33,6 @@
     "path_mapping": {
         "/var/www/html": "/Users/rmcquen/repos/funko-craftcms"
     },
-    "port": 9087,
+    "port": 9987,
     "super_globals": true
 }
