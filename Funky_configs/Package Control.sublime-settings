@@ -1,23 +1,36 @@
 {
-    "bootstrapped": true,
-    "in_process_packages": [],
-    "installed_packages": [
-        "Clang Format",
-        "DashDoc",
-        "DocBlockr",
-        "Gremlins",
-        "JsPrettier",
-        "MarkdownPreview",
-        "Package Control",
-        "PHP-Twig",
-        "phpfmt",
-        "PHPIntel",
-        "StandardFormat",
-        "SublimeCodeIntel",
-        "SublimeLinter",
-        "SublimeLinter-eslint",
-        "SublimeLinter-php",
-        "Terminus",
-        "uroboroSQL Formatter"
-    ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AutoPEP8",
+		"ChannelRepositoryTools",
+		"Clang Format",
+		"DashDoc",
+		"DocBlockr",
+		"Function Name Display",
+		"Gremlins",
+		"JsPrettier",
+		"MarkdownPreview",
+		"Package Control",
+		"PHP-Twig",
+		"phpfmt",
+		"PHPIntel",
+		"StandardFormat",
+		"sublime_text_persistent_status_bar_line_number",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"SublimeLinter-php",
+		"SublimeTextXdebugPlus",
+		"Terminus",
+		"uroboroSQL Formatter"
+	],
+	"repositories":
+	[
+		"https://github.com/ryanpcmcquen/SublimeTextXdebugPlus",
+		"https://github.com/ryanpcmcquen/sublime_text_persistent_status_bar_line_number"
+	]
 }
