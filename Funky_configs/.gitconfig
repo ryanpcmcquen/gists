@@ -5,12 +5,8 @@
     excludesfile = ~/.gitignore_global
 [merge]
     tool = smerge
-[mergetool "vscode"]
-    cmd = "code --wait $MERGED"
 [diff]
     tool = smerge
-[difftool "vscode"]
-    cmd = "code --wait --diff $LOCAL $REMOTE"
 [init]
     templatedir = ~/.git-templates
 [pager]
