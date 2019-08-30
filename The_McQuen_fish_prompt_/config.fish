@@ -15,5 +15,5 @@ export PATH="/usr/local/opt/node@10/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/node@10/lib"
 export CPPFLAGS="-I/usr/local/opt/node@10/include"
 
-export EDITOR="subl -w"
-export VISUAL="subl -w"
+set -U EDITOR subl -w
+set -U VISUAL subl -w
