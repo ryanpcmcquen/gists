@@ -24,9 +24,12 @@
 
         "*.csv",
         "*.gz",
+        "*.log.*",
+        "*.map",
         "*.sql",
         "*.tar.*",
         "*.xz",
+        "*.yaml.*",
         "node_modules/**",
         "vendor/**"
     ],

@@ -6,10 +6,10 @@
 	"installed_packages":
 	[
 		"AutoPEP8",
-		"ChannelRepositoryTools",
 		"Clang Format",
 		"DashDoc",
 		"DocBlockr",
+		"Dockerfile Syntax Highlighting",
 		"Function Name Display",
 		"Gremlins",
 		"JsPrettier",
