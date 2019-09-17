@@ -106,17 +106,15 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
-export HTTP_PROXY=http://awsbastion.funko.prod:3128
-export HTTPS_PROXY=http://awsbastion.funko.prod:3128
-
+export HTTP_PROXY=http://awsbastion.funko.com:3128
+export HTTPS_PROXY=http://awsbastion.funko.com:3128
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-
 export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/cert.pem'
 
-export PATH="/usr/local/opt/node@10/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/node@10/lib"
-export CPPFLAGS="-I/usr/local/opt/node@10/include"
+export PATH="/usr/local/opt/node@12/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node@12/lib"
+export CPPFLAGS="-I/usr/local/opt/node@12/include"
 
 #setopt KSH_ARRAYS
