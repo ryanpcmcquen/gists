@@ -21,7 +21,6 @@
         "*.swf",
         "*.jar",
         "*.zip",
-
         "*.csv",
         "*.gz",
         "*.log.*",
@@ -39,12 +38,12 @@
     "default_line_ending": "unix",
     "ensure_newline_at_eof_on_save": true,
     "fallback_encoding": "UTF-8",
-    "font_face": "Consolas",
-    "font_size": 16,
+    "font_face": "Dank Mono",
+    "font_options": [],
+    "font_size": 17,
     "ignored_packages": ["Vintage"],
     "index_exclude_patterns": [
         "*.log",
-
         "*.csv",
         "*.gz",
         "*.json",
