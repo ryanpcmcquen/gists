@@ -30,7 +30,8 @@
         "*.xz",
         "*.yaml.*",
         "node_modules/**",
-        "vendor/**"
+        "vendor/**",
+        "web/cpresources/**"
     ],
     "block_caret": true,
     "color_scheme": "Packages/User/Witness.sublime-color-scheme",
@@ -51,7 +52,8 @@
         "*.tar.*",
         "*.xz",
         "node_modules/**",
-        "vendor/**"
+        "vendor/**",
+        "web/cpresources/**"
     ],
     "js_prettier": {
         "auto_format_on_save": false,
