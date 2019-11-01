@@ -35,7 +35,7 @@
         "web/cpresources/**"
     ],
     "block_caret": true,
-    "color_scheme": "Packages/User/Witness.sublime-color-scheme",
+    "color_scheme": "Packages/Alabaster Color Scheme/Alabaster.sublime-color-scheme",
     "default_encoding": "UTF-8",
     "default_line_ending": "unix",
     "ensure_newline_at_eof_on_save": true,
