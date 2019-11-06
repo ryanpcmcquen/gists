@@ -106,8 +106,8 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
-export HTTP_PROXY=http://awsbastion.funko.com:3128
-export HTTPS_PROXY=http://awsbastion.funko.com:3128
+#export HTTP_PROXY=http://awsbastion.funko.com:3128
+#export HTTPS_PROXY=http://awsbastion.funko.com:3128
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
