@@ -6,6 +6,7 @@
     },
     "always_show_minimap_viewport": false,
     "auto_complete_commit_on_tab": true,
+    "auto_complete_with_fields": true,
     "auto_match_enabled": false,
     "binary_file_patterns": [
         "*.jpg",
@@ -58,12 +59,17 @@
         "web/cpresources/**"
     ],
     "js_prettier": {
-        "auto_format_on_save": false,
+        "auto_format_on_save": true,
+        "auto_format_on_save_excludes": ["*.js", "*.json"],
         "prettier_options": {
             "arrowParens": "always",
+            "braceStyle": "psr-2",
+            "printWidth": 120,
             "semi": false,
             "singleQuote": true,
-            "tabWidth": 4
+            "tabWidth": 4,
+            "trailingCommaPHP": "php7.2",
+            "useTabs": false
         }
     },
     "line_numbers": false,
