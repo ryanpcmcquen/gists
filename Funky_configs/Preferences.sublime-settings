@@ -59,8 +59,10 @@
         "web/cpresources/**"
     ],
     "js_prettier": {
+        "allow_inline_formatting": true,
         "auto_format_on_save": true,
-        "auto_format_on_save_excludes": ["*.js", "*.json"],
+        "auto_format_on_save_excludes": ["*.js"],
+        "custom_file_extensions": ["php", "sublime-settings"],
         "prettier_options": {
             "arrowParens": "always",
             "braceStyle": "psr-2",
