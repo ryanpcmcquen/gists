@@ -1,0 +1,11 @@
+{
+    "clients": {
+        "intelephense-ls": {
+            "enabled": false
+        },
+        "phpls": {
+            "enabled": true
+        }
+    },
+    "complete_all_chars": false
+}
