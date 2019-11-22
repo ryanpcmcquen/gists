@@ -11,9 +11,9 @@ export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/cert.pem'
 
-export PATH="/usr/local/opt/node@12/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/node@12/lib"
-export CPPFLAGS="-I/usr/local/opt/node@12/include"
+export PATH="/usr/local/opt/node.js/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node.js/lib"
+export CPPFLAGS="-I/usr/local/opt/node.js/include"
 
 set -U EDITOR subl -w
 set -U VISUAL subl -w
