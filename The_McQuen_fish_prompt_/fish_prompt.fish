@@ -1,102 +1,57 @@
+function __mcquen_decorate
+    echo -n " ⟡ "
+
+    if [ (count $argv) -gt 1 ]
+        set_color $argv[2..(count $argv)]
+    end
+
+    echo -n $argv[1]
+    set_color $fish_color_normal
+end
+
+function __mcquen_prompt_date
+    __mcquen_decorate (date +%H:%M:%S) "cc0"
+end
+
+function __mcquen_prompt_hostname
+    set -l whoami (whoami)
+    if [ (whoami) = 'root' ]
+        __mcquen_decorate $whoami "red" "--underline"
+    else
+        __mcquen_decorate $whoami "cyan"
+    end
+end
+
+function __mcquen_prompt_git
+    set -g __fish_git_prompt_show_informative_status 1
+    set -g __fish_git_prompt_showcolorhints 1
+    set -g __fish_git_prompt_char_stateseparator " "
+
+    set -l prompt (__fish_git_prompt "%s")
+
+    if [ -n "$prompt" ]
+        __mcquen_decorate $prompt
+    end
+end
+
+function __mcquen_prompt_cwd
+    __mcquen_decorate (prompt_pwd) yellow
+end
+
+function __mcquen_prompt_fish
+    # __mcquen_decorate '🐠 ><(((°> 🐟 ' blue
+    __mcquen_decorate '🐠 🐟 🐡' blue
+end
+
 function fish_prompt
-    # Show entire directory string:
+    echo -n "┌"
     set -g fish_prompt_pwd_dir_length 0
-    # - green lines if the last return command is OK, red otherwise
-    # - your user name, in red if root or yellow otherwise
-    # - your hostname, in cyan if ssh or blue otherwise
-    # - the current path (with prompt_pwd)
-    # - date +%X
-    # - the current virtual environment, if any
-    # - the current git status, if any, with __fish_git_prompt
-    # - the current battery state, if any, and if your power cable is unplugged, and if you have "acpi"
-    # - current background jobs, if any
 
-    # It goes from:
-    # [nim@Hattori:~]─[11:39:00]
-    # λ echo here
+    __mcquen_prompt_cwd
+    __mcquen_prompt_git
+    # __mcquen_prompt_hostname
+    __mcquen_prompt_date
+    __mcquen_prompt_fish
 
-    # To:
-    # [nim@Hattori:~/w/dashboard]─[11:37:14]─[V:django20]─[G:master↑1|●1✚1…1]─[B:85%, 05:41:42 remaining]
-    #  2	15054	0%	arrêtée	sleep 100000
-    #  1	15048	0%	arrêtée	sleep 100000
-    # λ echo there
-
-    set -q __fish_git_prompt_showupstream
-    or set -g __fish_git_prompt_showupstream auto
-
-    function _nim_prompt_wrapper
-        set retc $argv[1]
-        set field_name $argv[2]
-        set field_value $argv[3]
-
-        set_color normal
-        set_color $retc
-        echo -n '─'
-        set_color -o green
-        echo -n '['
-        set_color normal
-        test -n $field_name
-        and echo -n $field_name:
-        set_color $retc
-        echo -n $field_value
-        set_color -o green
-        echo -n ']'
-    end
-    and set retc green
-    or set retc red
-
-    set_color $retc
-    set_color -o green
-    echo -n [
-    if test "$USER" = root -o "$USER" = toor
-        set_color -o red
-    else
-        set_color -o yellow
-    end
-    echo -n $USER
-    set_color -o white
-    echo -n @
-    if [ -z "$SSH_CLIENT" ]
-        set_color -o blue
-    else
-        set_color -o cyan
-    end
-    echo -n (prompt_hostname)
-    set_color -o white
-    echo -n :(prompt_pwd)
-    set_color -o green
-    echo -n ']'
-
-    # Date
-    _nim_prompt_wrapper $retc '' (date +%X)
-
-    # Virtual Environment
-    set -q VIRTUAL_ENV
-    and _nim_prompt_wrapper $retc V (basename "$VIRTUAL_ENV")
-
-    # git
-    set prompt_git (__fish_git_prompt | string trim -c ' ()')
-    test -n "$prompt_git"
-    and _nim_prompt_wrapper $retc G $prompt_git
-
-    # Battery status
-    type -q acpi
-    and test (acpi -a 2> /dev/null | string match -r off)
-    and _nim_prompt_wrapper $retc B (acpi -b | cut -d' ' -f 4-)
-
-    # New line
-    echo
-
-    # Background jobs
-    set_color normal
-    for job in (jobs)
-        set_color $retc
-        set_color brown
-        echo $job
-    end
-    set_color normal
-    set_color $retc
-    set_color -o white
-    echo -n 'λ '
-    set_color normal
+    echo "\n└─λ "
 end
