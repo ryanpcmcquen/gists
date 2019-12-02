@@ -1,4 +1,3 @@
-
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
 export PATH="/usr/local/opt/ruby/bin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/sbin:$PATH"
@@ -14,3 +13,5 @@ export CPPFLAGS="-I/usr/local/opt/node.js/include"
 
 set -U EDITOR subl -w
 set -U VISUAL subl -w
+
+source "$HOME/.config/fish/secrets.fish"
