@@ -25,6 +25,10 @@ end
 function __mcquen_prompt_git
     set -g __fish_git_prompt_show_informative_status 1
     set -g __fish_git_prompt_showcolorhints 1
+
+    set -g __fish_git_prompt_char_dirtystate "*"
+    set -g __fish_git_prompt_char_invalidstate "#"
+    set -g __fish_git_prompt_char_stagedstate "+"
     set -g __fish_git_prompt_char_stateseparator " "
 
     set -l prompt (__fish_git_prompt "%s")
