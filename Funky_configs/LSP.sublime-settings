@@ -3,6 +3,9 @@
         "intelephense-ls": {
             "enabled": false
         },
+        "lsp-tsserver": {
+            "enabled": true
+        },
         "phpls": {
             "enabled": true
         }
