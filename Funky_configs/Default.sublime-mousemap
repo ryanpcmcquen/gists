@@ -11,5 +11,12 @@
         "count": 1,
         "modifiers": ["alt"],
         "command": "jump_back"
+    },
+    {
+        "button": "button1",
+        "count": 1,
+        "modifiers": ["ctrl"],
+        "press_command": "drag_select",
+        "command": "lsp_symbol_definition"
     }
 ]

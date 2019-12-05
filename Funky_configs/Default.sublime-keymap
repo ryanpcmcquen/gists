@@ -1,20 +1,14 @@
 [
     {
-        "keys": [
-            "ctrl+tab"
-        ],
+        "keys": ["ctrl+tab"],
         "command": "next_view"
     },
     {
-        "keys": [
-            "ctrl+shift+tab"
-        ],
+        "keys": ["ctrl+shift+tab"],
         "command": "prev_view"
     },
     {
-        "keys": [
-            "alt+t"
-        ],
+        "keys": ["alt+t"],
         "command": "toggle_terminus_panel"
     }
 ]
