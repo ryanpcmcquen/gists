@@ -5,32 +5,39 @@
 	],
 	"installed_packages":
 	[
+		"Alabaster Color Scheme",
+		"AutoFileName",
 		"AutoPEP8",
+		"Babel",
 		"Clang Format",
 		"DashDoc",
-		"DocBlockr",
+		"DiffTabs",
 		"Dockerfile Syntax Highlighting",
+		"DotENV",
+		"DoxyDoxygen",
+		"EditorConfig",
+		"FileDiffs",
+		"fish",
 		"Function Name Display",
 		"Gremlins",
 		"JsPrettier",
+		"LSP",
 		"MarkdownPreview",
+		"npm",
 		"Package Control",
+		"Persistent Status Bar Line Number",
 		"PHP-Twig",
-		"phpfmt",
-		"PHPIntel",
+		"RESTer HTTP Client",
+		"SendToPasteBin",
 		"StandardFormat",
-		"sublime_text_persistent_status_bar_line_number",
-		"SublimeCodeIntel",
 		"SublimeLinter",
-		"SublimeLinter-eslint",
+		"SublimeLinter-contrib-phpstan",
+		"SublimeLinter-contrib-standard",
 		"SublimeLinter-php",
-		"SublimeTextXdebugPlus",
 		"Terminus",
 		"uroboroSQL Formatter"
 	],
 	"repositories":
 	[
-		"https://github.com/ryanpcmcquen/SublimeTextXdebugPlus",
-		"https://github.com/ryanpcmcquen/sublime_text_persistent_status_bar_line_number"
 	]
 }
