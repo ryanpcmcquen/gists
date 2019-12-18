@@ -8,7 +8,7 @@ hs.window.animationDuration = 0
 -- Window Layouts
 -------------------------------------------------------------------
 
-local function calculateAxisesForFloaters(widthAndHeight)
+local function calculateAxesForFloaters(widthAndHeight)
     return {
         x = (
             ((1000 - widthAndHeight.w) / 2) / 1000
@@ -89,18 +89,18 @@ units = {
         divided back to the decimal
         level before being used.
     ]]
-    maximum = calculateAxisesForFloaters(
+    maximum = calculateAxesForFloaters(
         {
             w = 1000,
             h = 1000
         }
     ),
     centerLarge = {
-        w = 850,
+        w = 750,
         h = 950
     },
     centerSmall = {
-        w = 400,
+        w = 300,
         h = 500
     }
 
@@ -177,26 +177,32 @@ local function bindIt(...)
                         frame.h = frame.h * 1000
 
                         if bindTable.max then
-                            frame.w = frame.w + bindTable.change
-                            if frame.w > bindTable.max.w then
+                            if (frame.w + bindTable.change) > bindTable.max.w then
                                 frame.w = bindTable.max.w
+                            else
+                                frame.w = frame.w + bindTable.change
                             end
-                            frame.h = frame.h + bindTable.change
-                            if frame.h > bindTable.max.h then
+
+                            if (frame.h + bindTable.change) > bindTable.max.h then
                                 frame.h = bindTable.max.h
+                            else
+                                frame.h = frame.h + bindTable.change
                             end
                         elseif bindTable.min then
-                            frame.w = frame.w - bindTable.change
-                            if frame.w < bindTable.min.w then
+                            if (frame.w - bindTable.change) < bindTable.min.w then
                                 frame.w = bindTable.min.w
+                            else
+                                frame.w = frame.w - bindTable.change
                             end
-                            frame.h = frame.h - bindTable.change
-                            if frame.h < bindTable.min.h then
+
+                            if (frame.h - bindTable.change) < bindTable.min.h then
                                 frame.h = bindTable.min.h
+                            else
+                                frame.h = frame.h - bindTable.change
                             end
                         end
 
-                        local calcedFrame = calculateAxisesForFloaters(
+                        local calcedFrame = calculateAxesForFloaters(
                             {
                                 w = frame.w,
                                 h = frame.h
