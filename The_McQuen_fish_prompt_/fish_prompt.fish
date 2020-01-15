@@ -1,5 +1,5 @@
 function __mcquen_decorate
-    echo -n " ⟡ "
+    echo -n "⟡ "
 
     if [ (count $argv) -gt 1 ]
         set_color $argv[2..(count $argv)]
@@ -11,15 +11,6 @@ end
 
 function __mcquen_prompt_date
     __mcquen_decorate (date +%H:%M:%S) "cc0"
-end
-
-function __mcquen_prompt_hostname
-    set -l whoami (whoami)
-    if [ (whoami) = 'root' ]
-        __mcquen_decorate $whoami "red" "--underline"
-    else
-        __mcquen_decorate $whoami "cyan"
-    end
 end
 
 function __mcquen_prompt_git
@@ -43,19 +34,18 @@ function __mcquen_prompt_cwd
 end
 
 function __mcquen_prompt_fish
-    # __mcquen_decorate '🐠 ><(((°> 🐟 ' blue
     __mcquen_decorate '🐠 🐟 🐡' blue
 end
 
 function fish_prompt
-    echo -n "┌"
+    echo -n ""
     set -g fish_prompt_pwd_dir_length 0
 
     __mcquen_prompt_cwd
     __mcquen_prompt_git
-    # __mcquen_prompt_hostname
     __mcquen_prompt_date
     __mcquen_prompt_fish
 
-    echo "\n└─λ "
+    echo
+    echo "λ "
 end
