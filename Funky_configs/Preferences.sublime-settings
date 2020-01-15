@@ -41,9 +41,9 @@
     "default_line_ending": "unix",
     "ensure_newline_at_eof_on_save": true,
     "fallback_encoding": "UTF-8",
-    "font_face": "Dank Mono",
+    "font_face": "BPtypewrite",
     "font_options": [],
-    "font_size": 17,
+    "font_size": 18,
     "ignored_packages": ["JavaScript", "Vintage"],
     "index_exclude_patterns": [
         "*.lock",
