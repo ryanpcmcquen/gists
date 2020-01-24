@@ -7,6 +7,8 @@ set -U VISUAL subl -w
 
 source "$HOME/.config/fish/secrets.fish"
 
+set -gx ENGAGE_IMGATCH_SERVICE false
+
 set -gx LDFLAGS "-L/usr/local/opt/node@12/lib"
 set -gx CPPFLAGS "-I/usr/local/opt/node@12/include"
 
