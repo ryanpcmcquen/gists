@@ -54,7 +54,7 @@ wget -N https://gist.githubusercontent.com/ryanpcmcquen/150cf9a66bca2463e5660caf
 if [ -d ~/.emacs.d/personal ]; then
     curl -o ~/.emacs.d/personal/McQuen.el https://gist.githubusercontent.com/ryanpcmcquen/1ca6d1d7b5c8580aebef4f840e29f83a/raw/McQuen.el
 else
-    curl -o ~/.emacs https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/.emacs
+    curl -o ~/.emacs https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.emacs
 fi
 
 # Hammerspoon config:
