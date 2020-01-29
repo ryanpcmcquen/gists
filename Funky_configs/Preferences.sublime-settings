@@ -32,6 +32,7 @@
         "*.xz",
         "*.yaml.*",
         "node_modules/**",
+        "storage/runtime/**",
         "vendor/**",
         "web/cpresources/**"
     ],
@@ -55,6 +56,7 @@
         "*.tar.*",
         "*.xz",
         "node_modules/**",
+        "storage/runtime/**",
         "vendor/**",
         "web/cpresources/**"
     ],
