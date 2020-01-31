@@ -1,14 +1,14 @@
 {
     "clients": {
         "intelephense-ls": {
-            "enabled": false
+            "enabled": true
         },
         "lsp-tsserver": {
             "enabled": true
         },
         "phpls": {
-            "enabled": true
+            "enabled": false
         }
     },
-    "complete_all_chars": false
+    "complete_all_chars": true
 }
