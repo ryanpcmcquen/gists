@@ -8,3 +8,4 @@ curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeTe
 curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/C++.sublime-settings -o "%AppData%\Sublime Text 3\Packages\User\C++.sublime-settings"
 curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/orgmode.sublime-settings -o "%AppData%\Sublime Text 3\Packages\User\orgmode.sublime-settings"
 curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.emacs -o "%AppData%\.emacs"
+curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.emacs -o "%UserProfile%\.emacs"
