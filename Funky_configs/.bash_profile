@@ -21,8 +21,4 @@ export SHELL_SESSION_HISTORY=0
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+export PATH="$PATH:/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin:/usr/local/opt/node@12/bin"
