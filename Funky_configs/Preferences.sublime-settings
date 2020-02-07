@@ -44,7 +44,7 @@
     "fallback_encoding": "UTF-8",
     "font_face": "BPtypewrite",
     "font_options": [],
-    "font_size": 18,
+    "font_size": 17,
     "ignored_packages": ["JavaScript", "Vintage"],
     "index_exclude_patterns": [
         "*.lock",
