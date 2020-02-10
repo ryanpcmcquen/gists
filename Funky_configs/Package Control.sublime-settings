@@ -35,7 +35,8 @@
 		"SublimeLinter-contrib-standard",
 		"SublimeLinter-php",
 		"Terminus",
-		"uroboroSQL Formatter"
+		"uroboroSQL Formatter",
+		"Witness color scheme"
 	],
 	"repositories":
 	[
