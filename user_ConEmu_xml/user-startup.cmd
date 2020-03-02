@@ -1,1 +1,1 @@
-vcvarsall.bat x86_amd64
+vcvarsall.bat x64
