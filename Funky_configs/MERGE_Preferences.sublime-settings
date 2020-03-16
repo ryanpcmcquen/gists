@@ -1,6 +1,6 @@
 {
     "font_face": "IBM Plex Mono",
-    "font_size": 16,
+    "font_size": 15,
     "ignore_diff_white_space": true,
     "tab_size": 4,
     "theme": "Merge.sublime-theme",
