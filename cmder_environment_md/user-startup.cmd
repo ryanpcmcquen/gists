@@ -1,2 +1,3 @@
-vcvarsall.bat x64
-cd %UserProfile%\code
+cd /d "%UserProfile%\code"
+pushd "%cd%"
+call vcvarsall x64
