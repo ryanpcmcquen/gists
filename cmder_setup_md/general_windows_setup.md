@@ -1,10 +1,13 @@
+## Remember to rename your PC before doing anything!
+
 ### SSH/GIT setup:
 
-Head to: Services > OpenSSH Authentication Agent
-Set Startup type to 'Automatic' and start the service.
-Set `GIT_SSH` equal to the result of `where ssh`.
-Run `ssh-add -l` to see keys.
-Run `ssh-add PATH_TO_KEY` to add your key to the agent.
+- Head to: _Services_ > _OpenSSH Authentication Agent_
+- Set Startup type to 'Automatic' and start the service.
+- Set the _system_ enviro variable `GIT_SSH` equal to
+the result of `where ssh`.
+- Run `ssh-add -l` to see keys.
+- Run `ssh-add PATH_TO_KEY` to add your key to the agent.
 
 ### Enviro:
 
