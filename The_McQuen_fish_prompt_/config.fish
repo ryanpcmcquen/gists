@@ -15,3 +15,4 @@ set -gx CPPFLAGS "-I/usr/local/opt/node@12/include"
 set -g fish_user_paths "/usr/local/opt/node@12/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/php@7.3/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/php@7.3/sbin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/tomcat@8/bin" $fish_user_paths
