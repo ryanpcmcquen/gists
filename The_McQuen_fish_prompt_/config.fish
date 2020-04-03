@@ -19,3 +19,5 @@ set -g fish_user_paths "/usr/local/opt/php@7.3/sbin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/tomcat@8/bin" $fish_user_paths
 
 set -g fish_user_paths "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/bin" $fish_user_paths
+
+set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
