@@ -22,4 +22,7 @@ set -g fish_user_paths "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Con
 
 set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
-export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+export ANDROID_SDK_ROOT="/Users/rmcquen/Library/Android/sdk"
+
+set -g fish_user_paths "/Users/rmcquen/Library/Android/sdk/platform-tools" $fish_user_paths
+set -g fish_user_paths "/Users/rmcquen/Library/Android/sdk/cmdline-tools/latest/bin" $fish_user_paths
