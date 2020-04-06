@@ -12,6 +12,8 @@ set -gx ENGAGE_IMGATCH_SERVICE false
 set -gx LDFLAGS "-L/usr/local/opt/node@12/lib"
 set -gx CPPFLAGS "-I/usr/local/opt/node@12/include"
 
+set -g fish_user_paths "$HOME/.sdkman/candidates/gradle/current/bin" $fish_user_paths
+
 set -g fish_user_paths "/usr/local/opt/node@12/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/php@7.3/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/php@7.3/sbin" $fish_user_paths
@@ -22,7 +24,8 @@ set -g fish_user_paths "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Con
 
 set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
-export ANDROID_SDK_ROOT="/Users/rmcquen/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 
-set -g fish_user_paths "/Users/rmcquen/Library/Android/sdk/platform-tools" $fish_user_paths
-set -g fish_user_paths "/Users/rmcquen/Library/Android/sdk/cmdline-tools/latest/bin" $fish_user_paths
+set -g fish_user_paths "$HOME/Library/Android/sdk/platform-tools" $fish_user_paths
+set -g fish_user_paths "$HOME/Library/Android/sdk/cmdline-tools/latest/bin" $fish_user_paths
+
