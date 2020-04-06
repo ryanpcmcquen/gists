@@ -9,6 +9,9 @@ curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeTe
 curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/C++.sublime-settings -o "%AppData%\Sublime Text 3\Packages\User\C++.sublime-settings"
 curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/orgmode.sublime-settings -o "%AppData%\Sublime Text 3\Packages\User\orgmode.sublime-settings"
 
+:: You only need this on the first install (for Package Control):
+:: curl "https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeText/Package Control.sublime-settings" -o "%AppData%\Sublime Text 3\Packages\User\Package Control.sublime-settings"
+
 :: Sublime Merge:
 curl https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/SublimeMerge/Preferences.sublime-settings -o "%AppData%\Sublime Merge\Packages\User\Preferences.sublime-settings"
 
