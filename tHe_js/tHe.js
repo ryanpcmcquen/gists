@@ -1,6 +1,6 @@
 /*! tHe.js v0.2.3 by ryanpcmcquen */
 //
-// Ryan P. C. McQuen | Everett, WA | ryanpcmcquen@member.fsf.org
+// Ryan P. C. McQuen | Everett, WA
 
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

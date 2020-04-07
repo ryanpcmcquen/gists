@@ -1,5 +1,12 @@
 ## Remember to rename your PC before doing anything!
 
+Also, configure `git` to use LF line endings:
+
+```
+git config --global core.autocrlf false
+git config --global core.eol lf
+```
+
 ### SSH/GIT setup:
 
 - Head to: _Services_ > _OpenSSH Authentication Agent_
