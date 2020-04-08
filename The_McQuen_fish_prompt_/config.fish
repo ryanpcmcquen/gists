@@ -1,6 +1,6 @@
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
 
-export NODE_EXTRA_CA_CERTS='/usr/local/etc/openssl/cert.pem'
+set -gx NODE_EXTRA_CA_CERTS '/usr/local/etc/openssl/cert.pem'
 
 set -U EDITOR subl -w
 set -U VISUAL subl -w
@@ -24,13 +24,13 @@ set -g fish_user_paths "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Con
 
 set -gx JAVA_HOME "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 
-export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
+set -gx ANDROID_SDK_ROOT "$HOME/Library/Android/sdk"
 
 set -g fish_user_paths "$HOME/Library/Android/sdk/platform-tools" $fish_user_paths
 set -g fish_user_paths "$HOME/Library/Android/sdk/cmdline-tools/latest/bin" $fish_user_paths
 
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+set -gx ANDROID_HOME "$HOME/Library/Android/sdk"
+set -gx PATH "$PATH:$ANDROID_HOME/emulator"
+set -gx PATH "$PATH:$ANDROID_HOME/tools"
+set -gx PATH "$PATH:$ANDROID_HOME/tools/bin"
+set -gx PATH "$PATH:$ANDROID_HOME/platform-tools"
