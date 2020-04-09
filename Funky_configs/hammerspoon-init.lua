@@ -36,10 +36,10 @@ units = {
         no calculation is necessary. They are
         just a plan iteration sequence.
     ]]
-    left33 = {
+    left32 = {
         x = 0.000,
         y = 0.000,
-        w = 0.330,
+        w = 0.320,
         h = 1.000
     },
     left50 = {
@@ -48,17 +48,17 @@ units = {
         w = 0.500,
         h = 1.000
     },
-    left67 = {
+    left68 = {
         x = 0.000,
         y = 0.000,
-        w = 0.670,
+        w = 0.680,
         h = 1.000
     },
 
-    right33 = {
+    right32 = {
         x = 1.000,
         y = 0.000,
-        w = 0.330,
+        w = 0.320,
         h = 1.000
     },
     right50 = {
@@ -67,17 +67,17 @@ units = {
         w = 0.500,
         h = 1.000
     },
-    right67 = {
+    right68 = {
         x = 1.000,
         y = 0.000,
-        w = 0.670,
+        w = 0.680,
         h = 1.000
     },
 
-    middle34 = {
-        x = 0.330,
+    middle36 = {
+        x = 0.320,
         y = 0.000,
-        w = 0.340,
+        w = 0.360,
         h = 1.000
     },
 
@@ -228,18 +228,18 @@ bindIt(
         start = mash,
         mod = 'left',
         sequence = {
-            units.left33,
+            units.left32,
             units.left50,
-            units.left67
+            units.left68
         }
     },
     {
         start = mash,
         mod = 'right',
         sequence = {
-            units.right33,
+            units.right32,
             units.right50,
-            units.right67
+            units.right68
         }
     },
     {
@@ -270,7 +270,7 @@ bindIt(
     {
         start = mash,
         mod = 'z',
-        single = units.middle34
+        single = units.middle36
     },
 
     {
