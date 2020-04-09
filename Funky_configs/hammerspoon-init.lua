@@ -96,11 +96,11 @@ units = {
         }
     ),
     centerLarge = {
-        w = 750,
+        w = 800,
         h = 950
     },
     centerSmall = {
-        w = 300,
+        w = 350,
         h = 500
     }
 
