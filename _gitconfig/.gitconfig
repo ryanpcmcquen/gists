@@ -1,0 +1,6 @@
+[user]
+	email = rpcm@linux.com
+	name = Ryan McQuen
+[core]
+	autocrlf = false
+	eol = lf
