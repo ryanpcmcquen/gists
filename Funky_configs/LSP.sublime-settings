@@ -42,7 +42,7 @@
 			"enabled": false
 		},
 		"typescript-language-server": {
-			"enabled": true
+			"enabled": false
 		}
 	},
 	"complete_all_chars": true
