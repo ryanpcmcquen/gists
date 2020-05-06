@@ -45,7 +45,7 @@
 	"font_face": "BPtypewrite",
 	"font_options": [],
 	"font_size": 15,
-	"ignored_packages": ["JavaScript", "PHP", "Vintage"],
+	"ignored_packages": ["Naomi", "Vintage"],
 	"index_exclude_patterns": [
 		"*.lock",
 		"*.log",

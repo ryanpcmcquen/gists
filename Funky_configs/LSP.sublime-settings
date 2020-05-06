@@ -1,10 +1,10 @@
 {
 	"clients": {
-		"phpls": {
-			"enabled": false
-		},
 		"intelephense-ls": {
 			"enabled": true
+		},
+		"javascript-typescript-langserver": {
+			"enabled": false
 		},
 		"jdtls": {
 			"command": [
@@ -36,6 +36,9 @@
 			"syntaxes": ["Packages/Java/Java.sublime-syntax"]
 		},
 		"lsp-tsserver": {
+			"enabled": false
+		},
+		"phpls": {
 			"enabled": false
 		},
 		"typescript-language-server": {

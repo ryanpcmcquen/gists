@@ -1,10 +1,7 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
+	"in_process_packages": [],
+	"installed_packages": [
 		"AutoFileName",
 		"AutoPEP8",
 		"Clang Format",
@@ -40,7 +37,5 @@
 		"uroboroSQL Formatter",
 		"Witness color scheme"
 	],
-	"repositories":
-	[
-	]
+	"repositories": []
 }

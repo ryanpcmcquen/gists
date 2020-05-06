@@ -1,0 +1,22 @@
+// Settings in here override those in "LSP-typescript/LSP-typescript.sublime-settings"
+{
+    "languages": [
+        {
+            "languageId": "javascript",
+            "scopes": ["source.js"],
+            "syntaxes": [
+                "Packages/JavaScript/JavaScript.sublime-syntax",
+                "Packages/Babel/JavaScript (Babel).sublime-syntax",
+                "Packages/Naomi/syntaxes/naomi.fjsx15.sublime-syntax"
+            ]
+        },
+        {
+            "languageId": "javascriptreact",
+            "scopes": ["source.jsx"],
+            "syntaxes": [
+                "Packages/User/JS Custom/Syntaxes/React.sublime-syntax",
+                "Packages/Naomi/syntaxes/naomi.fjsx15.sublime-syntax"
+            ]
+        }
+    ]
+}
