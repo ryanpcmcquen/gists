@@ -1,23 +1,14 @@
 {
-	"ClangFormat":
-	{
+	"ClangFormat": {
 		"format_on_save": true,
-		"languages":
-		[
-			"C",
-			"C++",
-			"C++11",
-			"Objective-C",
-			"Objective-C++"
-		],
+		"languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"],
 		"style": "WebKit"
 	},
 	"always_show_minimap_viewport": false,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": false,
-	"binary_file_patterns":
-	[
+	"binary_file_patterns": [
 		"*.jpg",
 		"*.jpeg",
 		"*.png",
@@ -52,17 +43,10 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fallback_encoding": "UTF-8",
 	"font_face": "BPtypewrite",
-	"font_options":
-	[
-	],
+	"font_options": [],
 	"font_size": 15,
-	"ignored_packages":
-	[
-		"JavaScript",
-		"Vintage"
-	],
-	"index_exclude_patterns":
-	[
+	"ignored_packages": ["JavaScript", "PHP", "Vintage"],
+	"index_exclude_patterns": [
 		"*.lock",
 		"*.log",
 		"*.csv",
@@ -76,21 +60,12 @@
 		"vendor/**",
 		"web/cpresources/**"
 	],
-	"js_prettier":
-	{
+	"js_prettier": {
 		"allow_inline_formatting": true,
 		"auto_format_on_save": true,
-		"auto_format_on_save_excludes":
-		[
-			"*.js"
-		],
-		"custom_file_extensions":
-		[
-			"php",
-			"sublime-settings"
-		],
-		"prettier_options":
-		{
+		"auto_format_on_save_excludes": ["*.js"],
+		"custom_file_extensions": ["php", "sublime-settings"],
+		"prettier_options": {
 			"arrowParens": "always",
 			"braceStyle": "psr-2",
 			"printWidth": 120,

@@ -1,43 +1,46 @@
 {
-    "clients": {
-        "intelephense-ls": {
-            "enabled": true
-        },
-        "lsp-tsserver": {
-            "enabled": true
-        },
-        "phpls": {
-            "enabled": false
-        },
-        "jdtls": {
-            "command": [
-                "java",
-                "--add-modules=ALL-SYSTEM",
-                "--add-opens",
-                "java.base/java.util=ALL-UNNAMED",
-                "--add-opens",
-                "java.base/java.lang=ALL-UNNAMED",
-                "-Declipse.application=org.eclipse.jdt.ls.core.id1",
-                "-Dosgi.bundles.defaultStartLevel=4",
-                "-Declipse.product=org.eclipse.jdt.ls.core.product",
-                "-Dfile.encoding=UTF-8",
-                "-DwatchParentProcess=true",
-                "-noverify",
-                "-Xmx1G",
-                "-XX:+UseG1GC",
-                "-XX:+UseStringDeduplication",
-                "-jar",
-                "~/bin/jdt-language-server-latest/plugins/org.eclipse.equinox.launcher__1.5.700.v20200207-2156.jar",
-                "-configuration",
-                "~/bin/jdt-language-server-latest/config_mac",
-                "-data",
-                "/tmp/jdt_ws"
-            ],
-            "enabled": true,
-            "languageId": "java",
-            "scopes": ["source.java"],
-            "syntaxes": ["Packages/Java/Java.sublime-syntax"]
-        }
-    },
-    "complete_all_chars": true
+	"clients": {
+		"phpls": {
+			"enabled": false
+		},
+		"intelephense-ls": {
+			"enabled": true
+		},
+		"jdtls": {
+			"command": [
+				"java",
+				"--add-modules=ALL-SYSTEM",
+				"--add-opens",
+				"java.base/java.util=ALL-UNNAMED",
+				"--add-opens",
+				"java.base/java.lang=ALL-UNNAMED",
+				"-Declipse.application=org.eclipse.jdt.ls.core.id1",
+				"-Dosgi.bundles.defaultStartLevel=4",
+				"-Declipse.product=org.eclipse.jdt.ls.core.product",
+				"-Dfile.encoding=UTF-8",
+				"-DwatchParentProcess=true",
+				"-noverify",
+				"-Xmx1G",
+				"-XX:+UseG1GC",
+				"-XX:+UseStringDeduplication",
+				"-jar",
+				"~/bin/jdt-language-server-latest/plugins/org.eclipse.equinox.launcher__1.5.700.v20200207-2156.jar",
+				"-configuration",
+				"~/bin/jdt-language-server-latest/config_mac",
+				"-data",
+				"/tmp/jdt_ws"
+			],
+			"enabled": true,
+			"languageId": "java",
+			"scopes": ["source.java"],
+			"syntaxes": ["Packages/Java/Java.sublime-syntax"]
+		},
+		"lsp-tsserver": {
+			"enabled": false
+		},
+		"typescript-language-server": {
+			"enabled": true
+		}
+	},
+	"complete_all_chars": true
 }
