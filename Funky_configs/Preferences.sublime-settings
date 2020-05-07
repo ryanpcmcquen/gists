@@ -44,7 +44,7 @@
 	"fallback_encoding": "UTF-8",
 	"font_face": "BPtypewrite",
 	"font_options": [],
-	"font_size": 15,
+	"font_size": 13,
 	"ignored_packages": ["PHP", "Vintage"],
 	"index_exclude_patterns": [
 		"*.lock",

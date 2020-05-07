@@ -38,6 +38,9 @@
 		"lsp-tsserver": {
 			"enabled": false
 		},
+		"lsp-typescript": {
+			"enabled": true
+		},
 		"phpls": {
 			"enabled": false
 		},
