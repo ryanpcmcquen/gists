@@ -45,6 +45,10 @@ mkdir -p ~/.config/fish/functions/
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/2f93191657c621a7425787db938d2f8e/raw/fish_prompt.fish -P ~/.config/fish/functions/
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/2f93191657c621a7425787db938d2f8e/raw/config.fish -P ~/.config/fish/
 
+# Nushell:
+wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/config.toml -P $HOME/Library/Preferences/org.nushell.nu/
+wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/starship.toml -P $HOME/.config/
+
 # ZSH:
 mkdir -p ~/.oh-my-zsh/themes/
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/.zshrc -P ~/
