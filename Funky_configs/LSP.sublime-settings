@@ -3,9 +3,6 @@
 		"intelephense-ls": {
 			"enabled": true
 		},
-		"javascript-typescript-langserver": {
-			"enabled": false
-		},
 		"jdtls": {
 			"command": [
 				"java",
@@ -35,11 +32,15 @@
 			"scopes": ["source.java"],
 			"syntaxes": ["Packages/Java/Java.sublime-syntax"]
 		},
+		"lsp-typescript": {
+			"enabled": true
+		},
+
 		"lsp-tsserver": {
 			"enabled": false
 		},
-		"lsp-typescript": {
-			"enabled": true
+		"javascript-typescript-langserver": {
+			"enabled": false
 		},
 		"phpls": {
 			"enabled": false

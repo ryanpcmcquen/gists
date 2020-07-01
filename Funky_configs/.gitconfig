@@ -1,18 +1,30 @@
 [user]
-    name = Ryan McQuen
-    email = rmcquen@funko.com
+	name = Ryan McQuen
+	email = rmcquen@funko.com
 [core]
-    excludesfile = ~/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
-    tool = smerge
+	tool = smerge
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 [diff]
-    tool = smerge
+	tool = smerge
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
 [init]
-    templatedir = ~/.git-templates
+	templatedir = ~/.git-templates
 [pager]
-    branch = false
+	branch = false
 [mergetool "smerge"]
-    cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-    trustExitCode = true
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
 [difftool "smerge"]
-    cmd = smerge \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+	cmd = smerge \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+[filesystem "Oracle Corporation|12.0.2|/dev/disk1s1"]
+	timestampResolution = 8000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[filesystem "Oracle Corporation|12.0.2|/dev/disk1s5"]
+	timestampResolution = 7000 nanoseconds
+	minRacyThreshold = 0 nanoseconds
+[pull]
+	rebase = false

@@ -4,8 +4,8 @@
 	"installed_packages": [
 		"AutoFileName",
 		"AutoPEP8",
+		"Babel",
 		"Clang Format",
-		"Craft-Twig",
 		"DashDoc",
 		"DiffTabs",
 		"Dockerfile Syntax Highlighting",
@@ -20,7 +20,6 @@
 		"LSP",
 		"LSP-typescript",
 		"MarkdownPreview",
-		"Naomi",
 		"Nord",
 		"Package Control",
 		"Persistent Status Bar Line Number",

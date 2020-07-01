@@ -73,6 +73,7 @@ if [ -d "${SUBLIME_TEXT_CONFIG_DIR}" ]; then
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Default.sublime-keymap -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Default.sublime-mousemap -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Doxy.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
+    wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/ecmascript-js.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/JavaScript.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/JSON.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/LSP.sublime-settings -P "${SUBLIME_TEXT_CONFIG_DIR}"
