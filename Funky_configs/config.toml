@@ -1,2 +1,4 @@
-path = ["/usr/local/opt/tomcat@8/bin", "/usr/local/opt/php@7.3/sbin", "/usr/local/opt/php@7.3/bin", "/usr/local/opt/node@12/bin", "/usr/local/bin", "/usr/bin", "/bin", "/usr/sbin", "/sbin", "/Library/Apple/usr/bin"]
+completion_mode = "circular"
 use_starship = true
+
+path = ["/usr/local/opt/tomcat@8/bin", "/usr/local/opt/php@7.3/sbin", "/usr/local/opt/php@7.3/bin", "/usr/local/opt/node@12/bin", "/usr/local/bin", "/usr/bin", "/bin", "/usr/sbin", "/sbin", "/Library/Apple/usr/bin"]
