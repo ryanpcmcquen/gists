@@ -102,3 +102,6 @@ curl -o ~/.vimrc https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/mast
 # ZeroBrane Studio config:
 [ -d ~/.zbstudio ] && \
     curl -o ~/.zbstudio/user.lua https://raw.githubusercontent.com/ryanpcmcquen/linuxTweaks/master/.zbstudio/user.lua
+
+# Make a shortcut to the open command, which works around shells which have a built-in 'open' (nushell).
+ln -sf /usr/bin/open /usr/local/bin/fin
