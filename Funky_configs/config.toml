@@ -7,6 +7,8 @@ path = [
     "/usr/local/opt/php@7.3/sbin",
     "/usr/local/opt/php@7.3/bin",
     "/usr/local/opt/node@12/bin",
+    "/Users/rmcquen/bin",
+    "/Users/rmcquen/.cargo/bin",
     "/usr/local/bin",
     "/usr/bin",
     "/bin",
