@@ -7,5 +7,33 @@
         "/home/ubuntu/sites/funko-craftcms-nitro": "/Users/rmcquen/code/funko-craftcms-nitro"
     },
 
-    "super_globals": true
+    "super_globals": true,
+
+    // Break on exceptions, suspend execution
+    // when the exception name matches an entry in this list value.
+    "break_on_exception": [
+        // E_ERROR, E_CORE_ERROR, E_COMPILE_ERROR, E_USER_ERROR
+        "Fatal error",
+        // E_RECOVERABLE_ERROR (since PHP 5.2.0)
+        "Catchable fatal error",
+
+        //
+        // Do not break on warnings:
+        //
+        // E_WARNING, E_CORE_WARNING, E_COMPILE_WARNING, E_USER_WARNING
+        // "Warning",
+
+        // E_PARSE
+        "Parse error",
+        // E_NOTICE, E_USER_NOTICE
+        "Notice",
+        // E_STRICT
+        "Strict standards",
+        // E_DEPRECATED, E_USER_DEPRECATED (since PHP 5.3.0)
+        "Deprecated",
+        // 0
+        "Xdebug",
+        // default
+        "Unknown error"
+    ]
 }
