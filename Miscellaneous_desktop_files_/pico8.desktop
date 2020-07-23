@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=PICO-8
-Comment=PICO-8 fantasy console.
-Exec="/home/ry/apps/pico-8/pico8" %U
-Terminal=false
-Type=Application
-Icon=/home/ry/apps/pico-8/lexaloffle-pico8.png
-TryExec=/home/ry/apps/pico-8/pico8
