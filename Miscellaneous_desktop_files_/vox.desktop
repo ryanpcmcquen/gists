@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Voxatron
+Comment=Voxatron fantasy console.
+Exec="/home/ry/apps/voxatron/vox" %U
+Terminal=false
+Type=Application
+Icon=/home/ry/apps/voxatron/lexaloffle-vox.png
+TryExec=/home/ry/apps/voxatron/vox
