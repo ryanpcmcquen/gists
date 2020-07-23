@@ -2,7 +2,7 @@
     "close_on_stop": true,
     "host": "192.168.64.1",
 
-    "max_depth": 2,
+    "max_depth": 3,
     "path_mapping": {
         "/home/ubuntu/sites/funko-craftcms-nitro": "/Users/rmcquen/code/funko-craftcms-nitro"
     },
@@ -40,5 +40,15 @@
         "Xdebug",
         // default
         "Unknown error"
-    ]
+    ],
+
+    "debug_layout": {
+        "rows": [0.0, 0.5681076789838337, 1.0],
+        "cells": [
+            [0, 0, 2, 1],
+            [0, 1, 1, 2],
+            [1, 1, 2, 2]
+        ],
+        "cols": [0.0, 0.88690673828125, 1.0]
+    }
 }
