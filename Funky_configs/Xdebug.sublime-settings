@@ -43,12 +43,22 @@
     ],
 
     "debug_layout": {
-        "rows": [0.0, 0.5681076789838337, 1.0],
+        "rows": [0.0, 0.5593030053603879, 1.0],
         "cells": [
             [0, 0, 2, 1],
             [0, 1, 1, 2],
             [1, 1, 2, 2]
         ],
-        "cols": [0.0, 0.88690673828125, 1.0]
-    }
+        "cols": [0.0, 0.848134765625, 1.0]
+    },
+
+    // Group and index positions for debug views.
+    "breakpoint_group": 2,
+    "breakpoint_index": 0,
+    "context_group": 1,
+    "context_index": 0,
+    "stack_group": 1,
+    "stack_index": 1,
+    "watch_group": 1,
+    "watch_index": 2
 }
