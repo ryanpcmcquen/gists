@@ -1,5 +1,5 @@
 function __mcquen_decorate
-    echo -n "⟡ "
+    echo -n " 🌳  "
 
     if [ (count $argv) -gt 1 ]
         set_color $argv[2..(count $argv)]
@@ -26,26 +26,26 @@ function __mcquen_prompt_git
 
     if [ -n "$prompt" ]
         __mcquen_decorate $prompt
+        echo -n " "
     end
 end
 
 function __mcquen_prompt_cwd
     __mcquen_decorate (prompt_pwd) yellow
+    echo -n " "
 end
 
 function __mcquen_prompt_fish
-    __mcquen_decorate '🐠 🐟 🐡' blue
+    __mcquen_decorate ' 🐠  🐈' blue
+    echo
 end
 
 function fish_prompt
     set -g fish_prompt_pwd_dir_length 0
 
     __mcquen_prompt_cwd
-    echo -n " "
     __mcquen_prompt_fish
-    echo
     __mcquen_prompt_git
-    echo -n " "
     __mcquen_prompt_date
 
     echo
