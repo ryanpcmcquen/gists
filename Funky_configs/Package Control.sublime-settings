@@ -1,7 +1,10 @@
 {
 	"bootstrapped": true,
-	"in_process_packages": [],
-	"installed_packages": [
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
 		"AutoFileName",
 		"AutoPEP8",
 		"Babel",
@@ -18,6 +21,7 @@
 		"Gremlins",
 		"JsPrettier",
 		"LSP",
+		"LSP-intelephense",
 		"LSP-typescript",
 		"MarkdownPreview",
 		"Nord",
@@ -26,6 +30,7 @@
 		"PHP-Twig",
 		"RawLineEdit",
 		"RESTer HTTP Client",
+		"RustFmt",
 		"Sass",
 		"SendToPasteBin",
 		"StandardFormat",
@@ -35,7 +40,10 @@
 		"SublimeLinter-php",
 		"Terminus",
 		"uroboroSQL Formatter",
-		"Witness color scheme"
+		"Witness color scheme",
+		"Xdebug Client",
 	],
-	"repositories": []
+	"repositories":
+	[
+	],
 }
