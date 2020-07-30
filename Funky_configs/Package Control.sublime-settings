@@ -10,6 +10,7 @@
 		"Babel",
 		"Clang Format",
 		"DashDoc",
+		"Debugger",
 		"DiffTabs",
 		"Dockerfile Syntax Highlighting",
 		"DotENV",
@@ -41,7 +42,6 @@
 		"Terminus",
 		"uroboroSQL Formatter",
 		"Witness color scheme",
-		"Xdebug Client",
 	],
 	"repositories":
 	[

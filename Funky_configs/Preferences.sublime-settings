@@ -47,7 +47,7 @@
 	"font_face": "Dank Mono",
 	"font_options": [],
 	"font_size": 14,
-	"ignored_packages": ["JavaScript", "Vintage", "Xdebug Client"],
+	"ignored_packages": ["JavaScript", "Vintage"],
 	"index_exclude_patterns": [
 		"*.lock",
 		"*.log",
