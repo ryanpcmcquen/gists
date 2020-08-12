@@ -49,5 +49,5 @@
 			"enabled": false
 		}
 	},
-	"complete_all_chars": true
+	"complete_all_chars": false
 }
