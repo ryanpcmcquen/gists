@@ -1,5 +1,7 @@
 completion_mode = "circular"
 history_size = 500000
+max_history_size = 500000
+history_duplicates = "ignoreconsecutive"
 use_starship = true
 
 path = [
