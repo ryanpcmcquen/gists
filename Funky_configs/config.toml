@@ -3,7 +3,6 @@ history_size = 500000
 max_history_size = 500000
 history_duplicates = "ignoreconsecutive"
 use_starship = true
-
 path = [
     "/usr/local/opt/tomcat@8/bin",
     "/usr/local/opt/php@7.3/sbin",
@@ -18,3 +17,4 @@ path = [
     "/sbin",
     "/Library/Apple/usr/bin"
 ]
+startup = ["alias  jo [file] { open $file | to json --pretty 4 }"]
