@@ -3,7 +3,7 @@ startup = ["alias  jo [file] { open $file | to json --pretty 4 }"]
 use_starship = true
 
 [line_editor]
-completion_type = "fuzzy"
+completion_type = "circular"
 max_history_size = 500000
 history_duplicates = "ignoreconsecutive"
 history_ignore_space = true
