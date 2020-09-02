@@ -1,1 +1,0 @@
-{"view":"split","fontsize":"100","seethrough":"","prefixfree":"1","page":"all"}
