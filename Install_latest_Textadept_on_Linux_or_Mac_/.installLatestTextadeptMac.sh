@@ -7,8 +7,8 @@ ALTAPPNAME="Textadept"
 APPSHORTCUT="ta"
 
 # Download the latest version and put it in the right place.
-wget -N https://foicica.com/${APP}/download/${APP}_LATEST.osx.zip -P /tmp/
-wget -N https://foicica.com/${APP}/download/${APP}_LATEST.modules.zip -P /tmp/
+wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.osx.zip -P /tmp/
+wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.modules.zip -P /tmp/
 
 # The main app:
 unzip -u /tmp/${APP}_LATEST.osx.zip -d /tmp/

@@ -16,8 +16,8 @@ fi
 
 # Download the latest version and put it in the right place.
 # Also, remove any other versions.
-wget -N https://foicica.com/${APP}/download/${APP}_LATEST.${PKGARCH}.tgz -P /tmp/
-wget -N https://foicica.com/${APP}/download/${APP}_LATEST.modules.zip -P /tmp/
+wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.${PKGARCH}.tgz -P /tmp/
+wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.modules.zip -P /tmp/
 sudo rm -rf /opt/${APP}*
 # Some distros (like Solus), have no /opt/!
 sudo mkdir /opt/
