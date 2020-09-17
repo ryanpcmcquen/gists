@@ -4,6 +4,7 @@
 
 # Maybe for later:
 #TEXTADEPT_VERSION=$(curl https://foicica.com/textadept/feed | grep 'Download:' -A5 | grep '.osx.zip' | head -n1 | egrep -o "download/textadept_.*.osx.zip" | cut -d _ -f 2 | cut -d '"' -f 1 | sed 's/.osx.zip.*//g')
+#TEXTADEPT_VERSION=$(curl https://github.com/orbitalquark/textadept/releases.atom | grep 'Download:' -A5 | grep '.osx.zip' | head -n1 | egrep -o "download/textadept_.*.osx.zip" | cut -d _ -f 2 | cut -d '"' -f 1 | sed 's/.osx.zip.*//g')
 
 APP="textadept"
 APPSHORTCUT="ta"
