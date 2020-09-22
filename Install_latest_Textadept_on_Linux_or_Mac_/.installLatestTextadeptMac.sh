@@ -7,15 +7,18 @@ ALTAPPNAME="Textadept"
 APPSHORTCUT="ta"
 
 # Download the latest version and put it in the right place.
-wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.osx.zip -P /tmp/
-wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.modules.zip -P /tmp/
+DOWNLOADS="$(curl https://api.github.com/repos/orbitalquark/textadept/releases/latest | grep browser_download_url)"
+MAC_ARCHIVE="$(echo ${DOWNLOADS} | grep -io '[^"]*macos[^"]*')"
+MODULES_ARCHIVE="$(echo ${DOWNLOADS} | grep -io '[^"]*modules[^"]*')"
+wget -N "${MAC_ARCHIVE}" -P /tmp/
+wget -N "${MODULES_ARCHIVE}" -P /tmp/
 
 # The main app:
-unzip -u /tmp/${APP}_LATEST.osx.zip -d /tmp/
+unzip -u "/tmp/$(basename ${MAC_ARCHIVE})" -d /tmp/
 cp -R /tmp/${APP}_*.osx/*.app /Applications/
 
 # Modules:
-unzip -u /tmp/${APP}_LATEST.modules.zip -d /tmp/
+unzip -u "/tmp/$(basename ${MODULES_ARCHIVE})" -d /tmp/
 cp -R /tmp/${APP}_*modules/modules/* /Applications/${ALTAPPNAME}.app/Contents/Resources/modules/
 
 # Command line launcher:

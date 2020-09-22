@@ -17,15 +17,18 @@ fi
 
 # Download the latest version and put it in the right place.
 # Also, remove any other versions.
-wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.${PKGARCH}.tgz -P /tmp/
-wget -N https://orbitalquark.github.io/${APP}/download/${APP}_LATEST.modules.zip -P /tmp/
+DOWNLOADS="$(curl https://api.github.com/repos/orbitalquark/textadept/releases/latest | grep browser_download_url)"
+LINUX_ARCHIVE="$(echo ${DOWNLOADS} | grep -io '[^"]*linux[^"]*')"
+MODULES_ARCHIVE="$(echo ${DOWNLOADS} | grep -io '[^"]*modules[^"]*')"
+wget -N "${LINUX_ARCHIVE}" -P /tmp/
+wget -N "${MODULES_ARCHIVE}" -P /tmp/
 sudo rm -rf /opt/${APP}*
 # Some distros (like Solus), have no /opt/!
 sudo mkdir /opt/
-sudo tar xf /tmp/${APP}_LATEST.*.tgz -C /opt/
+sudo tar xf "/tmp/$(basename ${LINUX_ARCHIVE})" -C /opt/
 sudo mv /opt/${APP}* /opt/${APP}
 
-unzip -u /tmp/${APP}_LATEST.modules.zip -d /tmp/
+unzip -u "/tmp/$(basename ${MODULES_ARCHIVE})" -d /tmp/
 sudo cp -ru /tmp/${APP}_*modules/modules/* /opt/${APP}/modules/
 rm -rf /tmp/${APP}_*modules/
 
