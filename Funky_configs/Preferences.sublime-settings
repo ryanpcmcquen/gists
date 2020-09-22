@@ -41,6 +41,8 @@
 	"color_scheme": "Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
+	"draw_indent_guides": true,
+	"indent_guide_options": ["draw_active"],
 	"ensure_newline_at_eof_on_save": true,
 	"fallback_encoding": "UTF-8",
 	"findreplace_small": true,
