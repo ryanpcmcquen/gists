@@ -3,8 +3,12 @@ prompt = "echo $(starship prompt)"
 startup = ["alias  jo [file] { open $file | to json --pretty 4 }"]
 
 [line_editor]
+auto_add_history = true
 completion_type = "circular"
 history_duplicates = "ignoreconsecutive"
-history_ignore_space = true
+history_ignore_space = false
 max_history_size = 500000
 tab_stop = 4
+
+[textview]
+tab_width = 4

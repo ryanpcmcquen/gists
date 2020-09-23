@@ -35,7 +35,7 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Install homebrew:
 [ ! "`which brew`" ] && \
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew update && brew upgrade
+brew update && brew upgrade && brew upgrade --cask
 
 # Bash:
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/.bash_profile -P ~/
