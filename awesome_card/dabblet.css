@@ -5,46 +5,17 @@
 @front-p: #ffffff;
 @back-p: #000000;
 
-container {
+.bio-card-container {
   -webkit-perspective: 1000;
 }
-.card-content {
+.bio-card-content {
   padding: 10px;
 }
-.card-content h2 {
-  width: 180px;
-  font-size: 24px;
-  margin: 0;
-}
-.card-content ul {
-  margin: 0.75em 0;
-  padding: 0 1em;
-  list-style: none;
-}
 
-.card-content ul li {
-  width: 200px;
-  font-family: sans-serif;
-  font-weight: 100;
-  color: @list-color;
-}
 
-.card-content li:before {
-  content: "";
-  border-color: transparent #111111;
-  border-style: solid;
-  border-width: 0.35em 0 0.35em 0.45em;
-  display: block;
-  height: 0;
-  width: 0;
-  left: -1em;
-  top: 0.9em;
-  position: relative;
-}
-
-.container {
-  width: 280px;
-  height: 280px;
+.bio-card-container {
+  width: 245px;
+  height: 370px;
   float: left;
   list-style: none;
   margin-right: 10px;
@@ -52,7 +23,7 @@ container {
   position: relative;
   cursor: pointer;
 }
-.container div {
+.bio-card-container div {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -65,94 +36,70 @@ container {
   overflow: hidden;
 }
 
-.container:hover .front {
+.bio-card-container:hover .bio-card-front {
   z-index: 2;
   /*flip to back*/
   -webkit-transform: rotateY(180deg);
   transform:rotateY(180deg);
 }
 
-.container:hover .back {
+.bio-card-container:hover .bio-card-back {
   z-index: 1;
   /*flip to front*/
   -webkit-transform: rotateY(0deg);
   transform:rotateY(0deg);
 }
 
-.front {
-  background: #910294;
+.bio-card-front {
   background: @front-card-back;
+  background: transparent;
   /* put "front" content above flipped back content */
   z-index: 3;
-  color: #ffffff;
+  border: 0.1rem solid #168392;
 }
 
-.back {
+.bio-card-back {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: rgba(220, 220, 220, 0.9);
+  color: #fff;
   z-index: 2;
+  opacity: 1;
+  border: 0.15rem solid #168392;
 }
 
-p {
+.bio-card-image-overlay {
+  opacity: 0.8;
+  background-color: #000;
+}
+
+p.bio-card-text {
   margin: 0 auto;
   display: block;
   font-weight: 400;
   position: relative;
   font-size: .85em;
-  margin-top: 0px;
+  margin-top: 5rem;
   width: 200px;
   padding: 25px;
   text-align: center;
 }
-.front p {
+.bio-card-front p.bio-card-text {
   color: @front-p;
 }
 
-.back p {
+.bio-card-back p.bio-card-text {
   color: @back-p;
+  color: #eee;
   text-align: left;
 }
 
-span.front-title, span.front-subtitle {
-  font-weight: 100;
-  display: block;
-  font-family: sans-serif;
-}
-span.front-title {
-  font-size: 2em;
-}
-span.price {
-  top: 30px;
+span.bio-card-cta {
   position: relative;
-  font-family: georgia, serif;
-  font-size: 2.5em;
+  font-size: 1rem;
+  color: #168392;
 }
 
-.back p {
+.bio-card-back p.bio-card-text {
   margin-left: 10px;
   width: 180px;
-}
-
-.emboss {
-  background-color: rgba(0, 0, 0, 0.7);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: rgba(255, 255, 255, 0.5) 0px 2px 3px;
-}
-img.card-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-}
-
-button {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

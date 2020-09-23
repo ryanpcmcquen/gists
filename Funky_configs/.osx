@@ -46,7 +46,9 @@ wget -N https://gist.githubusercontent.com/ryanpcmcquen/2f93191657c621a7425787db
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/2f93191657c621a7425787db938d2f8e/raw/config.fish -P ~/.config/fish/
 
 # Nushell:
+# The config is in Preferences for older versions (0.19.0 or older), and in Application Support for newer versions.
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/config.toml -P $HOME/Library/Preferences/org.nushell.nu/
+wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/config.toml -P "$HOME/Library/Application Support/org.nushell.nu/"
 wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/starship.toml -P $HOME/.config/
 
 # ZSH:
