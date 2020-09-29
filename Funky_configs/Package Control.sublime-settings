@@ -40,6 +40,7 @@
 		"SublimeLinter-contrib-standard",
 		"SublimeLinter-php",
 		"Terminus",
+		"Terraform",
 		"uroboroSQL Formatter",
 		"Witness color scheme",
 	],
