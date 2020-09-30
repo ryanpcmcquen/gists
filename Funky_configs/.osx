@@ -65,7 +65,7 @@ fi
 
 # Hammerspoon config:
 [ -d ~/.hammerspoon ] && \
-    curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/hammerspoon-init.lua
+    curl -o ~/.hammerspoon/init.lua https://gist.githubusercontent.com/ryanpcmcquen/3a745e30455945f43e824f70c645942d/raw/init.lua
 
 # Sublime!
 SUBLIME_MERGE_CONFIG_DIR=~/Library/Application\ Support/Sublime\ Merge/Packages/User
