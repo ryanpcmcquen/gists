@@ -8,6 +8,9 @@ for dir in $(find ~/code -maxdepth 1 -type d); do
 done
 brew update && brew upgrade
 
+# Update bit!
+bash -c "curl -sf https://gobinaries.com/chriswalz/bit | sh; curl -sf https://gobinaries.com/chriswalz/bit/bitcomplete | sh && echo y | COMP_INSTALL=1 bitcomplete"
+
 npm update -g
 npm i -g npm
 
