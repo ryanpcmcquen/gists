@@ -1,0 +1,21 @@
+HOMEBREW_VERSION: 2.5.6
+ORIGIN: https://github.com/Homebrew/brew
+HEAD: abf214c01ff1edb57acf7e23d5eb24a777335e11
+Last commit: 8 days ago
+Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
+Core tap HEAD: 57d07d4da9c972c427190b66d5fcb67714a131e7
+Core tap last commit: 25 hours ago
+Core tap branch: master
+HOMEBREW_PREFIX: /usr/local
+HOMEBREW_CASK_OPTS: []
+HOMEBREW_GITHUB_API_TOKEN: set
+HOMEBREW_MAKE_JOBS: 8
+Homebrew Ruby: 2.6.3 => /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby
+CPU: octa-core 64-bit kabylake
+Clang: 12.0 build 1200
+Git: 2.28.0 => /usr/local/bin/git
+Curl: 7.64.1 => /usr/bin/curl
+Java: 12.0.2, 1.8.0_265
+macOS: 10.15.7-x86_64
+CLT: 12.0.0.0.1.1599194153
+Xcode: 12.0.1
