@@ -1,3 +1,4 @@
+curl -o /usr/local/bin/sync_all https://gist.githubusercontent.com/ryanpcmcquen/b2e608311f286a4ab3e1/raw/sync_all && chmod +x /usr/local/bin/sync_all
 npm update -g
 curl -o ~/.osx https://gist.githubusercontent.com/ryanpcmcquen/b2e608311f286a4ab3e1/raw/.osx && bash ~/.osx
 git_sync
