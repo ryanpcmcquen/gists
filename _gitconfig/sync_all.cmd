@@ -1,4 +1,4 @@
-curl https://gist.githubusercontent.com/ryanpcmcquen/1ccef39e0bb4c75be0d7d834b25bd6bb/raw/win_config.bat -o "%UserProfile%\sync_all.cmd"
+curl https://gist.githubusercontent.com/ryanpcmcquen/1ccef39e0bb4c75be0d7d834b25bd6bb/raw/sync_all.cmd -o "%UserProfile%\bin\sync_all.cmd"
 
 for /d %%d in (%UserProfile%\code\*) do "C:\Program Files\Sublime Merge\Git\cmd\git.exe" -C %%~fd pull --all
 
