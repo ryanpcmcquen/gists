@@ -9,7 +9,7 @@ done
 brew update && brew upgrade
 
 # Update bit!
-bash -c "curl -sf https://gobinaries.com/chriswalz/bit | sh; curl -sf https://gobinaries.com/chriswalz/bit/bitcomplete | sh && echo y | COMP_INSTALL=1 bitcomplete"
+bash -c "curl -sf https://gobinaries.com/chriswalz/bit | sh; echo y | bit complete"
 
 npm update -g
 npm i -g npm
