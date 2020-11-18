@@ -28,9 +28,8 @@
 				"/tmp/jdt_ws"
 			],
 			"enabled": true,
-			"languageId": "java",
-			"scopes": ["source.java"],
-			"syntaxes": ["Packages/Java/Java.sublime-syntax"]
+			"priority_selector": ["source.java"],
+			"selector": ["java", "Packages/Java/Java.sublime-syntax"]
 		},
 		"lsp-typescript": {
 			"enabled": true
