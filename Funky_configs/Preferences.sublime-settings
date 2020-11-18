@@ -38,7 +38,7 @@
 		"web/cpresources/**"
 	],
 	"block_caret": true,
-	"color_scheme": "Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"draw_indent_guides": true,
