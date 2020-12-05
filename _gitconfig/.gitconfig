@@ -4,3 +4,4 @@
 [core]
 	autocrlf = false
 	eol = lf
+	editor = subl -w
