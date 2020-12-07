@@ -2,7 +2,7 @@
 	"ClangFormat": {
 		"format_on_save": true,
 		"languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"],
-		"style": "WebKit"
+		"style": "WebKit",
 	},
 	"always_show_minimap_viewport": false,
 	"auto_complete_commit_on_tab": true,
@@ -38,7 +38,7 @@
 		"web/cpresources/**"
 	],
 	"block_caret": true,
-	"color_scheme": "Packages/Color Scheme - Default/Mariana.sublime-color-scheme",
+	"color_scheme": "Packages/Nord/Nord.sublime-color-scheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"draw_indent_guides": true,
@@ -79,8 +79,8 @@
 			"singleQuote": true,
 			"tabWidth": 4,
 			"trailingCommaPHP": true,
-			"useTabs": false
-		}
+			"useTabs": false,
+		},
 	},
 	"line_numbers": false,
 	"line_padding_bottom": 2,
@@ -95,5 +95,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"trim_only_modified_white_space": false,
-	"word_wrap": "auto"
+	"word_wrap": "auto",
 }
