@@ -2,7 +2,7 @@
 	"ClangFormat": {
 		"format_on_save": true,
 		"languages": ["C", "C++", "C++11", "Objective-C", "Objective-C++"],
-		"style": "WebKit",
+		"style": "WebKit"
 	},
 	"always_show_minimap_viewport": false,
 	"auto_complete_commit_on_tab": true,
@@ -45,7 +45,6 @@
 	"indent_guide_options": ["draw_active"],
 	"ensure_newline_at_eof_on_save": true,
 	"fallback_encoding": "UTF-8",
-	"findreplace_small": true,
 	"font_face": "Dank Mono",
 	"font_options": [],
 	"font_size": 14,
@@ -79,14 +78,13 @@
 			"singleQuote": true,
 			"tabWidth": 4,
 			"trailingCommaPHP": true,
-			"useTabs": false,
-		},
+			"useTabs": false
+		}
 	},
 	"line_numbers": false,
 	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"margin": 0,
-	"sidebar_xsmall": true,
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_line_endings": true,
@@ -95,5 +93,5 @@
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"trim_only_modified_white_space": false,
-	"word_wrap": "auto",
+	"word_wrap": "auto"
 }
