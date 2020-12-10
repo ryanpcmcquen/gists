@@ -1,1 +1,43 @@
-<!-- content to be placed inside <body>…</body> -->
+<script>
+jQuery(document).ready(function($) {
+  $(".stack").each(function() {
+    $(this).find("img:first-child").clone().appendTo(this).clone().appendTo(this);
+    $(this).find('img').each(function(i){
+      var num = i + 1;
+      $(this).addClass('photo' + num );
+    });
+  });                      
+});
+</script>
+
+<style>
+body{padding: 50px}
+hr{margin: 90px 0; border: none}
+@function black($opacity){@return rgba(0,0,0,$opacity)}
+@function white($opacity){@return rgba(255,255,255,$opacity)}
+
+.stack {
+	position: relative;
+  display: inline-block;
+  img{
+    @include box-shadow(0 0 20px black(0.7));
+    border: 5px solid #fff;
+    z-index: 3;
+    float: none;
+    position: relative;
+    left: 12.5em;
+    @include transform(rotate(3deg));
+  }
+  img ~ img{
+    @include transform(rotate(-10deg));
+    position: absolute;
+    left: 0em;
+    top: 7%;
+    z-index: 2;
+  }
+}
+</style>
+
+<div class="stack">
+  <img src="http://lorempixel.com/200/240/animals/3/"/>
+</div>
