@@ -1,0 +1,6 @@
+The connection to wss://nexus-router-b-30.intercom.io/pubsub/uc-0372c2e3-1abc-4318-9789-0f68abe205ec?X-Atmosphere-tracking-id=0&X-Atmosphere-Framework=2.2.6-javascript&X-Atmosphere-Transport=websocket&X-atmo-protocol=true&X-Nexus-Version=0.0.50 was interrupted while the page was loading. r4ma7fu1:6:0
+The connection to wss://s-dal5-nss-25.firebaseio.com/.ws?v=5&ns=kobraio was interrupted while the page was loading. firebase.js:56:0
+The connection to wss://nexus-router-a-30.intercom.io/pubsub/uc-0372c2e3-1abc-4318-9789-0f68abe205ec?X-Atmosphere-tracking-id=0&X-Atmosphere-Framework=2.2.6-javascript&X-Atmosphere-Transport=websocket&X-atmo-protocol=true&X-Nexus-Version=0.0.50 was interrupted while the page was loading. r4ma7fu1:6:0
+"run" app.js:18:4
+This site makes use of a SHA-1 Certificate; it's recommended you use certificates with signature algorithms that use hash functions stronger than SHA-1.[Learn More] 965081039
+"Intercom: Boot" services.js:69:12
