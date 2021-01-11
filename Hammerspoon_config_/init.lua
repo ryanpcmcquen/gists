@@ -27,7 +27,7 @@ end
 -- vertical split (x-axis) starts at 50% of the screen from the
 -- left, and is 50% wide.
 --
--- And so on...
+-- And so on ...
 units = {
 
     --[[
