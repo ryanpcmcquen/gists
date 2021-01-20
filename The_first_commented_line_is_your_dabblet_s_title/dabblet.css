@@ -2,6 +2,6 @@
  * The first commented line is your dabblet’s title
  */
 
-background: white;
-background: linear-gradient(45deg, orange, purple);
+background: #f06;
+background: linear-gradient(45deg, #f06, yellow);
 min-height: 100%;
