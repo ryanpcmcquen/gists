@@ -12,6 +12,8 @@ git config --global core.eol lf
 - Remove anything you don't use under 'Background Apps'.
 - Disable the 'Game Bar' in all the places.
 - Disable 'Skype' in the task bar.
+- Disable the 'Sticky Keys' and other such nonsense.
+- Turn off the default 'Print Screen' handling and install Greenshot.
 - Install LLVM/Clang.
 - Set the keyboard repeat delay/rate to be short/fast:
 

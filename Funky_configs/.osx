@@ -73,7 +73,7 @@ if [ -d "${SUBLIME_MERGE_CONFIG_DIR}" ]; then
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/MERGE_Preferences.sublime-settings -P "${SUBLIME_MERGE_CONFIG_DIR}"
     mv "${SUBLIME_MERGE_CONFIG_DIR}"/MERGE_Preferences.sublime-settings "${SUBLIME_MERGE_CONFIG_DIR}"/Preferences.sublime-settings
 fi
-SUBLIME_TEXT_CONFIG_DIR=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+SUBLIME_TEXT_CONFIG_DIR=~/Library/Application\ Support/Sublime\ Text/Packages/User
 if [ -d "${SUBLIME_TEXT_CONFIG_DIR}" ]; then
     wget -N https://raw.githubusercontent.com/ryanpcmcquen/sublime_witness/master/Witness.sublime-color-scheme -P "${SUBLIME_TEXT_CONFIG_DIR}"
     wget -N https://gist.githubusercontent.com/ryanpcmcquen/d0f0a265dde5cfdbd8b49d126083da6a/raw/Default.sublime-keymap -P "${SUBLIME_TEXT_CONFIG_DIR}"
