@@ -34,7 +34,7 @@ the result of `where ssh`.
 
 ```
 %UserProfile%\bin
-C:\Program Files\Sublime Text 3
+C:\Program Files\Sublime Text
 C:\Program Files\Sublime Merge
 %VCInstallDir%\Auxiliary\Build
 ```
