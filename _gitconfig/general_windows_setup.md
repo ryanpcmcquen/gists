@@ -10,6 +10,7 @@ git config --global core.eol lf
 ### General stuff:
 
 - Remove anything you don't use under 'Background Apps'.
+- Turn off extraneous items in 'Startup Apps'.
 - Disable the 'Game Bar' in all the places.
 - Disable 'Skype' in the task bar.
 - Disable the 'Sticky Keys' and other such nonsense.
