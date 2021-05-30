@@ -19,6 +19,8 @@ git config --global core.eol lf
 - Install LLVM/Clang.
 - Reduce visual effects:
 
+![Visual settings](https://gist.githubusercontent.com/ryanpcmcquen/1ccef39e0bb4c75be0d7d834b25bd6bb/raw/2021-05-30-12-55-23-Window.png)
+
 - Set the keyboard repeat delay/rate to be short/fast:
 
 ![Keyboard settings](https://gist.githubusercontent.com/ryanpcmcquen/1ccef39e0bb4c75be0d7d834b25bd6bb/raw/Annotation%25202020-05-10%2520230623.jpg)
