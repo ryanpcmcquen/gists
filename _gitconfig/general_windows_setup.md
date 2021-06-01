@@ -16,6 +16,7 @@ git config --global core.eol lf
 - Disable 'Skype' in the task bar.
 - Disable the 'Sticky Keys' and other such nonsense.
 - Turn off the default 'Print Screen' handling and install Greenshot.
+- Enable 'Random hardware addresses' in Wi-Fi settings.
 - Install LLVM/Clang.
 - Reduce visual effects:
 
