@@ -1,2 +1,0 @@
-Homebrew build logs for emscripten on macOS 10.15.7
-Build date: 2020-10-16 16:33:47
