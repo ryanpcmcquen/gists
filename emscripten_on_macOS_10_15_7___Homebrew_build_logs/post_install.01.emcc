@@ -1,0 +1,23 @@
+2020-10-16 16:33:47 -0700
+
+/usr/local/Cellar/emscripten/2.0.7/bin/emcc
+
+
+==============================================================================
+Welcome to Emscripten!
+
+This is the first time any of the Emscripten tools has been run.
+
+A settings file has been copied to /usr/local/Cellar/emscripten/2.0.7/libexec/.emscripten, at absolute path: /usr/local/Cellar/emscripten/2.0.7/libexec/.emscripten
+
+It contains our best guesses for the important paths, which are:
+
+  LLVM_ROOT       = /usr/bin
+  NODE_JS         = /usr/local/opt/node@12/bin/node
+  EMSCRIPTEN_ROOT = /usr/local/Cellar/emscripten/2.0.7/libexec
+
+Please edit the file if any of those are incorrect.
+
+This command will now exit. When you are done editing those paths, re-run it.
+==============================================================================
+
