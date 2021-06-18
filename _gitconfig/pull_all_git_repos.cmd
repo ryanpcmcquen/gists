@@ -1,1 +1,0 @@
-for /d %d in (%UserProfile%\code\*) do "C:\Program Files\Sublime Merge\Git\cmd\git.exe" -C %~fd pull --all
