@@ -1,0 +1,20 @@
+path = ["/usr/local/opt/node@10/bin", "/Users/rmcquen/bin", "/Users/rmcquen/.cargo/bin", "/usr/local/bin", "/Users/rmcquen/Apps/Sublime Text.app/Contents/SharedSupport/bin", "/Users/rmcquen/Apps/Sublime Merge.app/Contents/SharedSupport/bin", "/usr/bin", "/bin", "/usr/sbin", "/sbin", "/Library/Apple/usr/bin"]
+prompt = "echo $(starship prompt)"
+startup = []
+
+[env]
+EDITOR = "subl -w"
+HOME = "/Users/rmcquen"
+SHELL = "/usr/local/bin/nu"
+USER = "rmcquen"
+VISUAL = "subl -w"
+
+[line_editor]
+auto_add_history = true
+completion_type = "circular"
+history_ignore_space = false
+max_history_size = 500000
+tab_stop = 4
+
+[textview]
+tab_width = 4
