@@ -1,0 +1,73 @@
+{
+    "editor.find.seedSearchStringFromSelection": false,
+    "editor.fontFamily": "'IBM Plex Mono', NovaMono, monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 18,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": false,
+    "editor.renderWhitespace": "none",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 4,
+    "[handlebars]": {
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "constant",
+                    "entity.other.attribute-name",
+                    "keyword",
+                    "storage",
+                    "variable.language"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.operator"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "files.autoSave": "off",
+    "files.eol": "\n",
+    "files.maxMemoryForLargeFilesMB": 6144,
+    "files.trimTrailingWhitespace": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.validate.enable": false,
+    "php.suggest.basic": false,
+    "php.validate.enable": false,
+    "stretchySpaces.targetIndentation": 4,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontSize": 16,
+    "typescript.validate.enable": false,
+    "vscode_custom_css.imports": [
+        "file:///Users/rmcquen/.vscode/extensions/robbowen.synthwave-vscode-0.0.6/synthwave84.css"
+    ],
+    "window.title": "${activeEditorLong}",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Twilight Operator",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.settings.editor": "json"
+}
