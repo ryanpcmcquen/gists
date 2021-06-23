@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ "`echo ${1} | grep -i mongo`" ]; then
+    PASS=$(bw get item "${1}" | jq --join-output --raw-output .login.password | jq --slurp --raw-input '@uri' --raw-output)
+else
+    PASS=$(bw get item "${1}" | jq --join-output --raw-output .login.password)
+fi
+echo ${PASS}
+echo ${PASS} | pbcopy
