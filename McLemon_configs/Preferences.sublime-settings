@@ -1,0 +1,74 @@
+{
+	"always_show_minimap_viewport": false,
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"auto_match_enabled": false,
+	"binary_file_patterns":
+	[
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.gz",
+		"*.tar.*",
+		"*.xz",
+		"node_modules/**",
+		"vendor/**"
+	],
+	"block_caret": true,
+	"color_scheme": "Packages/Color Scheme - Default/Celeste.sublime-color-scheme",
+	"default_encoding": "UTF-8",
+	"default_line_ending": "unix",
+	"draw_indent_guides": true,
+	"ensure_newline_at_eof_on_save": true,
+	"fallback_encoding": "UTF-8",
+	"font_face": "Cascadia Code SemiLight",
+	"font_options":
+	[
+		"no_liga",
+		"no_clig",
+		"no_calt"
+	],
+	"font_size": 13,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"*.lock",
+		"*.gz",
+		"*.tar.*",
+		"*.xz",
+		"*.zip",
+		"node_modules/**",
+		"vendor/**"
+	],
+	"line_numbers": false,
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"margin": 0,
+	"show_encoding": true,
+	"show_full_path": true,
+	"show_line_endings": true,
+	"tab_size": 2,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_only_modified_white_space": false,
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
+}
