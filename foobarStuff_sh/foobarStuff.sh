@@ -7,6 +7,6 @@ find . -type l -print0 -exec unlink {} \;
 #find . -name "*:*" -exec rename : _-_ '{}' \;
 ## So we do this instead:
 for F in `find . -name "*:*"`; do
-  NEW_NAME=$(echo -n "$F" | sed 's/:/_-_/g')
-  mv -v "$F" "$NEW_NAME"
+    NEW_NAME=$(echo -n "$F" | sed 's/:/_-_/g')
+    mv -v "$F" "$NEW_NAME"
 done
