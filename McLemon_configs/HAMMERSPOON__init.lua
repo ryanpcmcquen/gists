@@ -34,7 +34,7 @@ units = {
         Sequences!
         These use exact decimal arguments because
         no calculation is necessary. They are
-        just a plan iteration sequence.
+        just a plain iteration sequence.
     ]]
     left32 = {
         x = 0.000,
