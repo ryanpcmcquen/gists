@@ -14,7 +14,8 @@ And then apply that to a new type:
 export type FooApiExpressionAttributeValues = Partial<PrefixKeyWithColon<FooApi>>
 ```
 
-And with `SellerBoosterApi` equaling this:
+And with `FooApi` equaling this:
+
 ```
 export interface FooApi {
     id: string
@@ -52,8 +53,8 @@ const createMessageBodyFromIntermediates = async ({
     isCorrection,
     shadowMode = false,
 }: {
-    newProfile: SellerProfileIntermediate
-    oldProfile: SellerProfileIntermediate | null
+    newProfile: ProfileIntermediate
+    oldProfile: ProfileIntermediate | null
     messageType: string
     actionBy: string
     tracingId?: string
